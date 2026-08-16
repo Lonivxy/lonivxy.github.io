@@ -7,6 +7,7 @@
     list-style: none;
     padding: 15px;
     background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
@@ -155,4 +156,55 @@
 
 p {
   white-space: nowrap;
+}
+
+/* ============================================================
+ * Sakura (Cherry Blossom) WebGL effect canvas
+ * (was inline style on <canvas id="sakura"> in index.html)
+ * ============================================================ */
+#sakura {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ============================================================
+ * Page loading overlay
+ * Fades out once the page + sakura scene are ready
+ * ============================================================ */
+#loading {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1a1020;
+  color: #fadada;
+  font-family: 'SJNarrowLight', 'Segoe UI', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#loading::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(250, 218, 218, 0.25);
+  border-top-color: #fadada;
+  border-radius: 50%;
+  animation: loading-spin 0.9s linear infinite;
+}
+#loading.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+@keyframes loading-spin {
+  to { transform: rotate(360deg); }
 }

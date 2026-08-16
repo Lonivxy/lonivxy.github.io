@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Friends</title>
   <style>
     * {
@@ -29,6 +30,7 @@
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(255,255,255,0.1);
+      -webkit-backdrop-filter: blur(6px);
       backdrop-filter: blur(6px);
       z-index: 0;
     }
@@ -61,6 +63,7 @@
       border: 2px solid rgba(255, 255, 255, 0.6);
       border-radius: 20px;
       padding: 2rem 3rem;
+      -webkit-backdrop-filter: blur(12px);
       backdrop-filter: blur(12px);
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
       transition: all 0.3s ease;
@@ -111,6 +114,7 @@
   right: 0;
   bottom: 0;
   background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   z-index: -1;
@@ -143,6 +147,7 @@
 
     .friend-info {
   background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border-radius: 12px;
   padding: 0.5rem 1rem;
@@ -168,6 +173,7 @@
   border-radius: 12px;
   text-decoration: none;
   margin-bottom: 1.5rem;
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(255, 180, 255, 0.1);
@@ -182,7 +188,14 @@
   box-shadow: 0 0 18px rgba(255, 180, 255, 0.3);
   transform: translateX(-2px);
 }
-
+.empty-tip {
+  color: #fff;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0.85;
+  padding: 2rem 1rem;
+  text-align: center;
+}
   </style>
 </head>
 <body>
@@ -194,12 +207,7 @@
     </a>
     <div class="title">Friends</div>
     <div class="friends">
-      <a class="friend-card" href="https://wyf9.top/" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/72241996?v=4" alt="wyf9">
-        <div class="friend-info">
-          <h3>wyf9</h3>
-        </div>
-      </a>
+      <p class="empty-tip">No friends yet~</p>
     </div>
   </div>
 
