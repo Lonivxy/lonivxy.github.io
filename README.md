@@ -1,9 +1,3 @@
-<div align="center">
-  [**English**](README.md) · [简体中文](README_zh_CN.md)
-</div>
-
----
-
 `~ % sh greetings.sh`  
 👋🏻 Hello! I'm **Lonivxy**.  
 Minecraft IGN: [**NewbieL1314**](https://namemc.com/profile/NewbieL1314.1).
@@ -49,13 +43,7 @@ This website's source code is open-sourced on GitHub:
 
 `~ % cat tech.txt`  # Vibe Coding  
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/WebGL-990000?style=for-the-badge&logo=webgl&logoColor=white" alt="WebGL" />
-  <img src="https://img.shields.io/badge/discord.js-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="discord.js" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Vibe%20Coding-EC4899?style=for-the-badge" alt="Vibe Coding" />
 </p>
 
 `~ % curl -s https://api.github.com/users/Lonivxy`  # Social  
@@ -66,7 +54,7 @@ This website's source code is open-sourced on GitHub:
 </p>
 
 `~ % cat vibes.txt`  # Vibes  
-· 🎵 Lofi · AC · Chill
+· 🎵 Lofi · ACG · Chill
 · 🌸 Love the sakura and snows  
 
 `~ % cat quote.txt`  
