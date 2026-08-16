@@ -1,3 +1,9 @@
+<div align="center">
+  [**简体中文**](README_zh_CN.md) · [English](README.md)
+</div>
+
+---
+
 ~ % sh greetings.sh  
 
 👋🏻 你好！我是 **Lonivxy**。  
@@ -40,7 +46,7 @@ PING lovx.fun (114.51.4.1) with 64 bytes of data:
   <img src="https://streak-stats.demolab.com/?user=Lonivxy&theme=radical" alt="GitHub Streak" />
 </p>
 
-`~ % cat tech.txt`  # 技术栈  
+`~ % cat tech.txt`  # Vibe Coding  
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />

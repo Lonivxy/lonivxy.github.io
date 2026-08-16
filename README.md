@@ -1,3 +1,9 @@
+<div align="center">
+  [**English**](README.md) · [简体中文](README_zh_CN.md)
+</div>
+
+---
+
 `~ % sh greetings.sh`  
 👋🏻 Hello! I'm **Lonivxy**.  
 Minecraft IGN: [**NewbieL1314**](https://namemc.com/profile/NewbieL1314.1).
@@ -41,7 +47,7 @@ This website's source code is open-sourced on GitHub:
   <img src="https://streak-stats.demolab.com/?user=Lonivxy&theme=radical" alt="GitHub Streak" />
 </p>
 
-`~ % cat tech.txt`  # Tech Stack  
+`~ % cat tech.txt`  # Vibe Coding  
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
@@ -60,7 +66,7 @@ This website's source code is open-sourced on GitHub:
 </p>
 
 `~ % cat vibes.txt`  # Vibes  
-· 🎵 Lofi · Anime OST · Chill 
+· 🎵 Lofi · AC · Chill
 · 🌸 Love the sakura and snows  
 
 `~ % cat quote.txt`  
