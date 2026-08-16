@@ -155,7 +155,8 @@ void main(void) {
 
     if(r > rstop) discard;
 
-    vec3 col = mix(vec3(1.0, 0.8, 0.75), vec3(1.0, 0.9, 0.87), r); // Original sakura petal colors
+    // 中心(头部)更浅、边缘(尾巴)更深：避免无反光花瓣显得外浅内深
+    vec3 col = mix(vec3(1.0, 0.9, 0.87), vec3(1.0, 0.8, 0.75), r);
     float grady = mix(0.0, 1.0, pow(coord.y * 0.5 + 0.5, 0.35));
     col *= vec3(1.0, grady, grady);
     col *= mix(0.8, 1.0, pow(abs(coord.x), 0.3));
@@ -295,8 +296,9 @@ void main(void) {
     col *= smoothstep(1.0, 0.0, pow(length((texCoord - vec2(0.5)) * 2.0), 1.2) * 0.5);
     col = pow(col, vec4(0.45454545454545)); //(1.0 / 2.2)
 
-    gl_FragColor = vec4(col.rgb, 1.0);
-    gl_FragColor.a = 1.0;
+    // 背景透明：用源 alpha 决定不透明度，让壁纸透出来
+    float alpha = clamp(srccol.a, 0.0, 1.0);
+    gl_FragColor = vec4(col.rgb, alpha);
 }
 `;
 
@@ -619,7 +621,7 @@ function createPointFlowers() {
     pointFlower.fader = Vector3.create(0.0, 10.0, 0.0);
 
     // paramerters: velocity[3], rotate[3]
-    pointFlower.numFlowers = 1600;
+    pointFlower.numFlowers = 500; // 降低频率：粒子数更少，没那么浓密
     pointFlower.particles = new Array(pointFlower.numFlowers);
     // vertex attributes {position[3], euler_xyz[3], size[1]}
     pointFlower.dataArray = new Float32Array(pointFlower.numFlowers * (3 + 3 + 2));
@@ -1007,15 +1009,11 @@ function renderScene() {
     //gl.bindFramebuffer(gl.FRAMEBUFFER, null);
     gl.bindFramebuffer(gl.FRAMEBUFFER, renderSpec.mainRT.frameBuffer);
     gl.viewport(0, 0, renderSpec.mainRT.width, renderSpec.mainRT.height);
-    // Adjusted clearColor for the main render target to fit pink-purple theme
-    // Original: gl.clearColor(0.005, 0, 0.05, 0);
-    gl.clearColor(0.1, 0.05, 0.15, 0);
-
-
+    // 背景透明：跳过 renderBackground，让《你的名字》壁纸透出来
+    gl.clearColor(0, 0, 0, 0);
 
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
-    renderBackground();
     renderPointFlowers();
     renderPostProcess();
 }
@@ -1032,7 +1030,7 @@ function onResize(e) {
 function setViewports() {
     renderSpec.setSize(gl.canvas.width, gl.canvas.height);
 
-    gl.clearColor(0.2, 0.2, 0.5, 1.0); // This clearColor is for the canvas before RTs are used, might not be visible
+    gl.clearColor(0, 0, 0, 0); // 透明背景，壁纸可见
     gl.viewport(0, 0, renderSpec.width, renderSpec.height);
 
     var rtfunc = function (rtname, rtw, rth) {
@@ -1093,7 +1091,7 @@ window.addEventListener('load', function(e) {
     };
     try {
         makeCanvasFullScreen(canvas);
-        gl = canvas.getContext('experimental-webgl');
+        gl = canvas.getContext('experimental-webgl', { preserveDrawingBuffer: true });
     } catch(e) {
         if (loadingDiv) {
             loadingDiv.textContent = "WebGL not supported. Sakura effect cannot be shown. " + e;

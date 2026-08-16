@@ -124,43 +124,19 @@
 }
 
 
-/* 花瓣容器，保证它在光标下方 */
-#petal-container {
+/* ============================================================
+ * 光标渐变线条拖尾 canvas
+ * ============================================================ */
+#trail {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   pointer-events: none;
-  overflow: hidden;
-  z-index: 9998;
-}
-
-/* 单个花瓣样式 & 下落动画 */
-.petal {
-  position: fixed;
-  font-size: 16px;
-  pointer-events: none;
-  animation: fall 2s ease-out forwards;
-  opacity: 0.8;
-}
-
-@keyframes fall {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100px) translateX(-50px) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-p {
-  white-space: nowrap;
+  z-index: 9995;
 }
 
 /* ============================================================
- * Sakura (Cherry Blossom) WebGL effect canvas
- * (was inline style on <canvas id="sakura"> in index.html)
+ * 樱花 WebGL 花瓣层（透明背景，叠在壁纸上）
  * ============================================================ */
 #sakura {
   z-index: 2;
@@ -169,6 +145,72 @@ p {
   top: 0;
   height: 100vh;
   width: 100vw;
+  pointer-events: none;
+}
+
+/* ============================================================
+ * Custom cursor (pink dot + soft trailing glow)
+ * ============================================================ */
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+#cursor {
+  position: fixed;
+  left: 0; top: 0;
+  width: 14px; height: 14px;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  background: #ffd3e0;
+  box-shadow: 0 0 8px rgba(255, 182, 193, 0.9), 0 0 16px rgba(255, 182, 193, 0.5);
+  pointer-events: none;
+  z-index: 10001;
+}
+
+#cursor-glow {
+  position: fixed;
+  left: 0; top: 0;
+  width: 46px; height: 46px;
+  margin: -23px 0 0 -23px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253, 203, 241, 0.55), transparent 70%);
+  pointer-events: none;
+  z-index: 10000;
+}
+
+/* 光标空闲 8 秒 / 移出窗口时隐藏 */
+.cursor-idle #cursor,
+.cursor-idle #cursor-glow,
+.cursor-idle #trail {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+p {
+  white-space: nowrap;
+}
+
+/* ============================================================
+ * Random "Your Name." movie wallpaper background
+ * ============================================================ */
+#bg-wallpaper {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1020; /* 图片加载失败时的兜底底色 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+#bg-wallpaper::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(20, 10, 25, 0.35); /* 深色半透明，保证文字可读 */
 }
 
 /* ============================================================
