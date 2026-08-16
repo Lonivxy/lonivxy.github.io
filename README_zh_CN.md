@@ -1,12 +1,11 @@
 ~ % sh greetings.sh  
 
 👋🏻 你好！我是 **Lonivxy**。  
-Minecraft IGN: [**L0vxy**](https://namemc.com/profile/L0vxy.1)。
+Minecraft IGN: [**NewbieL1314**](https://namemc.com/profile/NewbieL1314.1)。
 
 ~ % sh note.sh  
 > **注意**: 以下内容仅为 README 的艺术化排版。  
-> 如果感觉眼花缭乱，请只关注**加粗的文本部分**（例如此句）。  
-> style 参考 [maao.cc](https://maao.cc/)。
+> 如果感觉眼花缭乱，请只关注**加粗的文本部分**（例如此句）。
 
 ~ % whoami  
 · 🧑🏻‍💻 开发者 & 🎮 玩家  
@@ -24,7 +23,7 @@ Minecraft IGN: [**L0vxy**](https://namemc.com/profile/L0vxy.1)。
 设计 / 代码实验  
 
 ~ % ping Lonivxy  # 联系方式  
-PING lovxy.cloud (114.51.4.1) with 64 bytes of data:  
+PING lovx.fun (114.51.4.1) with 64 bytes of data:  
 > **蓝色文本可点击**  
 
 - **Bilibili**: [洛澪曦](https://space.bilibili.com/591406440)  
@@ -51,8 +50,23 @@ PING lovxy.cloud (114.51.4.1) with 64 bytes of data:
   <img src="https://img.shields.io/badge/discord.js-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="discord.js" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
+
+`~ % curl -s https://api.github.com/users/Lonivxy`  # 社交  
+<p align="center">
+  <img src="https://img.shields.io/github/followers/Lonivxy?style=for-the-badge&logo=github&label=Followers&color=ec4899" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/Lonivxy?style=for-the-badge&logo=github&label=Stars&color=8b5cf6" alt="Stars" />
+  <img src="https://img.shields.io/github/last-commit/Lonivxy/lonivxy.github.io?style=for-the-badge&logo=github&label=Last%20Commit&color=06b6d4" alt="Last Commit" />
+</p>
+
+`~ % cat vibes.txt`  # 小彩蛋  
+· 🎵 Lofi · 动漫 OST · Chill  
+· 🌸 喜欢樱花和雪  
+
+`~ % cat quote.txt`  
+> "Talk is cheap. Show me the code." — *Linus Torvalds*
+
 ~ % python3 footer.py  
 编程萌新uwu
-版权所有 © 2025 **Lonivxy**
+版权所有 © 2024-2026 **Lonivxy**
 
 ~ % logout

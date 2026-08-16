@@ -1,11 +1,11 @@
 `~ % sh greetings.sh`  
 👋🏻 Hello! I'm **Lonivxy**.  
-Minecraft IGN: [**L0vxy**](https://namemc.com/profile/L0vxy.1).
+Minecraft IGN: [**NewbieL1314**](https://namemc.com/profile/NewbieL1314.1).
 
 `~ % sh note.sh`  
 > **Note**: The following is just an artistic presentation of the README.  
 > If it feels overwhelming, focus only on the **bolded text** (like this sentence).  
-> Style inspired by [maao.cc](https://maao.cc/).
+
 
 `~ % whoami`  
 · 🧑🏻‍💻 Developer & 🎮 Gamer  
@@ -23,7 +23,7 @@ Utilities / Games
 Design / Code Experiments  
 
 `~ % ping Lonivxy`  # Contact Info  
-PING lovxy.cloud (114.51.4.1) with 64 bytes of data:  
+PING lovx.fun (114.51.4.1) with 64 bytes of data:  
 > **Blue text is clickable**  
 
 - **Bilibili**: [Lonivxy](https://space.bilibili.com/591406440)  
@@ -52,8 +52,22 @@ This website's source code is open-sourced on GitHub:
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
 
+`~ % curl -s https://api.github.com/users/Lonivxy`  # Social  
+<p align="center">
+  <img src="https://img.shields.io/github/followers/Lonivxy?style=for-the-badge&logo=github&label=Followers&color=ec4899" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/Lonivxy?style=for-the-badge&logo=github&label=Stars&color=8b5cf6" alt="Stars" />
+  <img src="https://img.shields.io/github/last-commit/Lonivxy/lonivxy.github.io?style=for-the-badge&logo=github&label=Last%20Commit&color=06b6d4" alt="Last Commit" />
+</p>
+
+`~ % cat vibes.txt`  # Vibes  
+· 🎵 Lofi · Anime OST · Chill 
+· 🌸 Love the sakura and snows  
+
+`~ % cat quote.txt`  
+> "Talk is cheap. Show me the code." — *Linus Torvalds*
+
 `~ % python3 footer.py`  
 Programming newbie uwu  
-Copyright © 2025 **Lonivxy**
+Copyright © 2024-2026 **Lonivxy**
 
 `~ % logout`
