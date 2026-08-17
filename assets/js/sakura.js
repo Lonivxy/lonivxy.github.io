@@ -930,7 +930,7 @@ function initPostProcess() {
 }
 
 function renderPostProcess() {
-    gl.enable(gl.TEXTURE_2D);
+    // TEXTURE_2D is not a valid gl.enable() capability in WebGL, so remove it.
     gl.disable(gl.DEPTH_TEST);
     var bindRT = function (rt, isclear) {
         gl.bindFramebuffer(gl.FRAMEBUFFER, rt.frameBuffer);
