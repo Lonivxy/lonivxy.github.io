@@ -250,3 +250,40 @@ p {
 @keyframes loading-spin {
   to { transform: rotate(360deg); }
 }
+
+/* ============================================================
+ * 通用：防止 100vw 固定层引发横向滚动 / 偏移
+ * ============================================================ */
+html, body {
+  overflow-x: hidden;
+}
+
+/* ============================================================
+ * 手机 / 竖屏适配：让按钮网格居中、不溢出
+ * ============================================================ */
+@media screen and (max-width: 736px) {
+  #header nav {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+  #header nav .link-grid {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 12px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #header nav .link-grid li {
+    border-top: 0; /* 覆盖 main.css 移动端的分隔线 */
+    height: 48px;
+  }
+  #header nav .link-grid li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    white-space: nowrap;
+    padding: 10px 8px;
+  }
+}
