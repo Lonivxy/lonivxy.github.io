@@ -20,32 +20,32 @@
       srt: 'assets/musics/第57次取消发送-菲菲公主.srt',
       title: '第57次取消发送 (菲菲公主)',
       subs: [
-        { start: 16200,  end: 20480,  text: '♪ 好像只能礼貌的问候 ♪' },
-        { start: 21440,  end: 25840,  text: '♪ 你的温柔也曾被我拥有 ♪' },
-        { start: 27100,  end: 32360,  text: '♪ 不太习惯没了你的小宇宙 ♪' },
-        { start: 32360,  end: 36010,  text: '♪ 念旧是上瘾感受 ♪' },
-        { start: 38040,  end: 42120,  text: '♪ 仿佛只能轻声地低语 ♪' },
-        { start: 43310,  end: 47550,  text: '♪ 你的笑容曾温暖我的心 ♪' },
-        { start: 48980,  end: 54260,  text: '♪ 不太习惯失去你的小天地 ♪' },
-        { start: 54260,  end: 57750,  text: '♪ 回忆成了大问题 ♪' },
-        { start: 60600,  end: 63040,  text: '♪ 我好想你 ♪' },
-        { start: 64200,  end: 69099,  text: '♪ 在每个夜里孤单自寻 ♪' },
-        { start: 69499,  end: 71519,  text: '♪ 纷飞的回忆 ♪' },
-        { start: 71519,  end: 76970,  text: '♪ 猜不透你褪色的熟悉 ♪' },
-        { start: 76970,  end: 80350,  text: '♪ 是我编造的幻觉 ♪' },
-        { start: 103180, end: 105950, text: '♪ 熟悉的世界全是你的记号 ♪' },
-        { start: 105950, end: 108690, text: '♪ 删掉的短信决定不想打扰 ♪' },
-        { start: 108690, end: 111030, text: '♪ 可是想念却在脑袋理后 ♪' },
-        { start: 111030, end: 115630, text: '♪ 照那些画面还是没有办法忘掉你现在在哪里 ♪' },
-        { start: 115630, end: 119880, text: '♪ 我们聊的回忆是不是已经不是唯一 ♪' },
-        { start: 119880, end: 123840, text: '♪ 念旧是我的问题 ♪' },
-        { start: 126280, end: 137180, text: '♪ 我好想你在每个夜里离孤单思绪纷飞的回忆 ♪' },
-        { start: 137180, end: 142630, text: '♪ 猜不透你褪色的熟悉 ♪' },
-        { start: 142630, end: 146030, text: '♪ 是我编造的幻觉 ♪' },
-        { start: 148160, end: 156650, text: '♪ 我好想你在每个夜里孤单自寻 ♪' },
-        { start: 157050, end: 159090, text: '♪ 纷飞的回忆 ♪' },
-        { start: 159090, end: 164520, text: '♪ 猜不透你褪色的熟悉 ♪' },
-        { start: 164520, end: 167160, text: '♪ 是我们造的幻觉 ♪' }
+        { start: 12000,  end: 16280,  text: '♪ 好像只能礼貌的问候 ♪' },
+        { start: 17240,  end: 21640,  text: '♪ 你的温柔也曾被我拥有 ♪' },
+        { start: 22900,  end: 28160,  text: '♪ 不太习惯没了你的小宇宙 ♪' },
+        { start: 28160,  end: 31810,  text: '♪ 念旧是上瘾感受 ♪' },
+        { start: 33840,  end: 37920,  text: '♪ 仿佛只能轻声地低语 ♪' },
+        { start: 39110,  end: 43350,  text: '♪ 你的笑容曾温暖我的心 ♪' },
+        { start: 44780,  end: 50060,  text: '♪ 不太习惯失去你的小天地 ♪' },
+        { start: 50060,  end: 53550,  text: '♪ 回忆成了大问题 ♪' },
+        { start: 56400,  end: 58840,  text: '♪ 我好想你 ♪' },
+        { start: 60000,  end: 64899,  text: '♪ 在每个夜里孤单自叙 ♪' },
+        { start: 65299,  end: 67319,  text: '♪ 纷飞的回忆 ♪' },
+        { start: 67319,  end: 72770,  text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 72770,  end: 76150,  text: '♪ 是我编造的幻觉 ♪' },
+        { start: 98980,  end: 101750, text: '♪ 熟悉的世界全是你的记号 ♪' },
+        { start: 101750, end: 104490, text: '♪ 删掉的短信决定不想打扰 ♪' },
+        { start: 104490, end: 106830, text: '♪ 可是想念却在脑袋理后 ♪' },
+        { start: 106830, end: 111430, text: '♪ 照那些画面还是没有办法忘掉你现在在哪里 ♪' },
+        { start: 111430, end: 115680, text: '♪ 我们聊的回忆是不是已经不是唯一 ♪' },
+        { start: 115680, end: 119640, text: '♪ 念旧是我的问题 ♪' },
+        { start: 122080, end: 135980, text: '♪ 我好想你在每个夜里离孤单思绪纷飞的回忆 ♪' },
+        { start: 135980, end: 140430, text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 140430, end: 145830, text: '♪ 是我编造的幻觉 ♪' },
+        { start: 146360, end: 154450, text: '♪ 我好想你在每个夜里孤单自叙 ♪' },
+        { start: 154850, end: 157390, text: '♪ 纷飞的回忆 ♪' },
+        { start: 157390, end: 163320, text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 163320, end: 167960, text: '♪ 是我们造的幻觉 ♪' }
       ]
     },
     {
@@ -422,13 +422,34 @@
     if (timeTotal) timeTotal.textContent = fmtTime(d);
   }
   var seeking = false;
+  /* ---- 可靠跳转：直接 seek；若元素处于不可 seek 状态则重载资源后定位（同记忆播放路径） ---- */
+  function seekTo(t) {
+    if (!isFinite(t) || t < 0) return;
+    var wasPlaying = playing;
+    audio.pause();
+    try { audio.currentTime = t; } catch (e) {}
+    setTimeout(function() {
+      var cur = audio.currentTime || 0;
+      if (Math.abs(cur - t) > 0.6) {
+        audio.src = PLAYLIST[current].src;
+        audio.addEventListener('loadedmetadata', function once() {
+          audio.removeEventListener('loadedmetadata', once);
+          try { audio.currentTime = t; } catch (e) {}
+          updateProgress();
+          if (wasPlaying) play();
+        });
+      } else if (wasPlaying && audio.paused) {
+        play();
+      }
+    }, 150);
+  }
   function seekFromEvent(e) {
     if (!seekEl || !audio.duration) return;
     var r = seekEl.getBoundingClientRect();
     var p = (e.clientX - r.left) / r.width;
     if (!isFinite(p)) return;
     p = Math.max(0, Math.min(1, p));
-    audio.currentTime = p * audio.duration;
+    seekTo(p * audio.duration);
     if (seekFill) seekFill.style.width = (p * 100) + '%';
   }
   if (seekEl) {
@@ -559,7 +580,7 @@
       }
       // 点击歌词行 → 跳转到该句时间点
       line.addEventListener('click', function() {
-        audio.currentTime = c.start / 1000;
+        seekTo(c.start / 1000);
       });
       lyricsPanel.appendChild(line);
     });

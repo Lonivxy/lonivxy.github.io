@@ -21,6 +21,10 @@
     align-items: center;
     height: 50px; /* 你也可以改成 60px、40px 看更好看 */
 }
+/* 去掉模板自带的白竖线分隔（main.css 的 #header nav ul li 会加 border-left） */
+#header nav .link-grid li {
+    border-left: 0;
+}
 
 /* 按钮链接样式 */
 .link-grid li a {
