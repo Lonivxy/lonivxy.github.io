@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lonivxy ♡ Just a speck of stardust~</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23fdcbf1'/><stop offset='1' stop-color='%23d6bcff'/></linearGradient></defs><circle cx='50' cy='50' r='48' fill='url(%23g)'/><text x='50' y='70' font-size='54' text-anchor='middle' fill='%234a2040' font-family='Arial'>&#9835;</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/></svg>" />
   <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     rel="stylesheet"
@@ -38,6 +38,7 @@
         <button class="music-ctrl" id="music-lyrics" title="Lyrics panel" aria-label="Lyrics"><i class="fas fa-align-left"></i></button>
         <button class="music-ctrl" id="music-vol" title="Mute" aria-label="Volume"><i class="fas fa-volume-up"></i></button>
         <input type="range" id="music-vol-range" min="0" max="100" value="100" title="Volume" aria-label="Volume" />
+        <button class="music-ctrl" id="music-minibtn" title="Mini mode" aria-label="Mini mode"><i class="fas fa-compress"></i></button>
       </div>
       <div id="music-progress">
         <span id="music-time-cur">0:00</span>
@@ -47,6 +48,13 @@
       <div id="music-lyrics-panel"></div>
     </div>
     <div id="music-playlist-menu"></div>
+    <div id="music-mini">
+      <i class="fas fa-music mini-icon"></i>
+      <span id="music-mini-title">♪ ...</span>
+      <button class="music-ctrl" id="music-mini-play" title="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+      <button class="music-ctrl" id="music-mini-next" title="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
+      <button class="music-ctrl" id="music-mini-expand" title="Expand" aria-label="Expand"><i class="fas fa-expand"></i></button>
+    </div>
   </div>
 
   <div id="wrapper">

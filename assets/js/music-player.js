@@ -16,30 +16,36 @@
   //     subs: [ { start: 12000, end: 16000, text: 'line' } ] } // optional inline (works offline)
   var PLAYLIST = [
     {
-      src: 'assets/musics/57.ogg',
-      srt: 'assets/musics/57.srt',
-      title: '57',
+      src: 'assets/musics/第57次取消发送-菲菲公主.ogg',
+      srt: 'assets/musics/第57次取消发送-菲菲公主.srt',
+      title: '第57次取消发送 (菲菲公主)',
       subs: [
-        { start: 11500,  end: 15820,  text: '♪ 好像只能禮貌地問候 (問候) ♪' },
-        { start: 16859,  end: 21300,  text: '♪ 你的溫柔也曾被我擁有 (擁有) ♪' },
-        { start: 22600,  end: 27960,  text: '♪ 不太習慣沒了你的小宇宙 ♪' },
-        { start: 27960,  end: 31449,  text: '♪ 念舊是上癮感受 (感受) ♪' },
-        { start: 33780,  end: 37939,  text: '♪ 彷彿只能輕聲地低語 (低語) ♪' },
-        { start: 39140,  end: 43460,  text: '♪ 你的笑容曾溫暖我的心 (我的心) ♪' },
-        { start: 44920,  end: 50320,  text: '♪ 不太習慣失去你的小天地 ♪' },
-        { start: 50320,  end: 53799,  text: '♪ 回憶成了大問題 ♪' },
-        { start: 56780,  end: 65459,  text: '♪ 我好想你 ♪' },
-        { start: 65859,  end: 67939,  text: '♪ 在每個夜裡孤單自敘 ♪' },
-        { start: 67939,  end: 71500,  text: '♪ 紛飛的回憶猜不透你 ♪' },
-        { start: 71500,  end: 76939,  text: '♪ 褪色的熟悉是我編造的幻覺 ♪' },
-        { start: 100239, end: 103049, text: '♪ 熟悉的世界全是你的記號 ♪' },
-        { start: 103049, end: 105829, text: '♪ 刪掉的簡訊確定不想打擾 ♪' },
-        { start: 105829, end: 108640, text: '♪ 可是想念卻在腦袋裡吼叫 ♪' },
-        { start: 108640, end: 112920, text: '♪ 那些畫面還是沒有辦法忘掉 ♪' },
-        { start: 112920, end: 117250, text: '♪ 你現在在哪裡? ♪' },
-        { start: 117250, end: 121290, text: '♪ 我們倆的回憶是不是已經不是唯一? ♪' },
-        { start: 121290, end: 123760, text: '♪ 念舊是我的問題 ♪' },
-        { start: 123760, end: 127439, text: '♪ 我好想你 ♪' }
+        { start: 11200,  end: 15480,  text: '♪ 好像只能礼貌的问候 ♪' },
+        { start: 16440,  end: 20840,  text: '♪ 你的温柔也曾被我拥有 ♪' },
+        { start: 22100,  end: 27360,  text: '♪ 不太习惯没了你的小宇宙 ♪' },
+        { start: 27360,  end: 31010,  text: '♪ 念旧是上瘾感受 ♪' },
+        { start: 33040,  end: 37120,  text: '♪ 仿佛只能轻声地低语 ♪' },
+        { start: 38310,  end: 42550,  text: '♪ 你的笑容曾温暖我的心 ♪' },
+        { start: 43980,  end: 49260,  text: '♪ 不太习惯失去你的小天地 ♪' },
+        { start: 49260,  end: 52750,  text: '♪ 回忆成了大问题 ♪' },
+        { start: 55600,  end: 58040,  text: '♪ 我好想你 ♪' },
+        { start: 59200,  end: 64099,  text: '♪ 在每个夜里孤单自寻 ♪' },
+        { start: 64499,  end: 66519,  text: '♪ 纷飞的回忆 ♪' },
+        { start: 66519,  end: 71970,  text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 71970,  end: 75350,  text: '♪ 是我编造的幻觉 ♪' },
+        { start: 98180,  end: 100950, text: '♪ 熟悉的世界全是你的记号 ♪' },
+        { start: 100950, end: 103690, text: '♪ 删掉的短信决定不想打扰 ♪' },
+        { start: 103690, end: 106030, text: '♪ 可是想念却在脑袋理后 ♪' },
+        { start: 106030, end: 110630, text: '♪ 照那些画面还是没有办法忘掉你现在在哪里 ♪' },
+        { start: 110630, end: 114880, text: '♪ 我们聊的回忆是不是已经不是唯一 ♪' },
+        { start: 114880, end: 118840, text: '♪ 念旧是我的问题 ♪' },
+        { start: 121280, end: 132180, text: '♪ 我好想你在每个夜里离孤单思绪纷飞的回忆 ♪' },
+        { start: 132180, end: 137630, text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 137630, end: 141030, text: '♪ 是我编造的幻觉 ♪' },
+        { start: 143160, end: 151650, text: '♪ 我好想你在每个夜里孤单自寻 ♪' },
+        { start: 152050, end: 154090, text: '♪ 纷飞的回忆 ♪' },
+        { start: 154090, end: 159520, text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 159520, end: 162160, text: '♪ 是我们造的幻觉 ♪' }
       ]
     },
     {
@@ -92,6 +98,43 @@
         { start: 141780, end: 143700, text: '♪ なら今夜だけ ♪', cn: '那便只限今夜' },
         { start: 144840, end: 146320, text: '♪ 愛してみてね？ ♪', cn: '试着，爱上我吧？' }
       ]
+    },
+    {
+      src: 'assets/musics/(d0tc0mmie)I Cant Wait feat. GUMI.mp3',
+      srt: 'assets/musics/(d0tc0mmie)I Cant Wait feat. GUMI.srt',
+      title: 'I Cant Wait (GUMI)',
+      subs: [
+        { start: 2660,   end: 4360,   text: '♪ i cant wait ♪', cn: '我等不及了' },
+        { start: 4360,   end: 5660,   text: '♪ no mistake ♪', cn: '没有错' },
+        { start: 5660,   end: 6870,   text: "♪ i'm in love ♪", cn: '我坠入爱河' },
+        { start: 6870,   end: 8680,   text: '♪ like a drug ♪', cn: '像中了毒' },
+        { start: 8680,   end: 10000,  text: '♪ pick me up ♪', cn: '带我走吧' },
+        { start: 10000,  end: 11400,  text: '♪ these feelings ♪', cn: '这些情愫' },
+        { start: 11400,  end: 13790,  text: '♪ will never leave my heart ♪', cn: '永远不会离开我的心' },
+        { start: 13790,  end: 14780,  text: '♪ love me ♪', cn: '爱我' },
+        { start: 14780,  end: 17990,  text: '♪ love me ahh~ ♪', cn: '爱我啊~' },
+        { start: 17990,  end: 19090,  text: '♪ i cant wait ♪', cn: '我等不及了' },
+        { start: 19090,  end: 20630,  text: '♪ no mistake ♪', cn: '没有错' },
+        { start: 20630,  end: 22060,  text: "♪ i'm in love ♪", cn: '我坠入爱河' },
+        { start: 22060,  end: 23420,  text: '♪ like a drug ♪', cn: '像中了毒' },
+        { start: 23420,  end: 24780,  text: '♪ pick me up ♪', cn: '带我走吧' },
+        { start: 24780,  end: 26120,  text: '♪ these feelings ♪', cn: '这些情愫' },
+        { start: 26120,  end: 28870,  text: '♪ will never leave my heart ♪', cn: '永远不会离开我的心' },
+        { start: 28870,  end: 32880,  text: '♪ love me love me ahh~ ♪', cn: '爱我 爱我啊~' },
+        { start: 32880,  end: 48870,  text: '♪ (teto sax solo) ♪', cn: '(teto 萨克斯独奏)' },
+        { start: 48870,  end: 52530,  text: '♪ ドキドキ 愛してる ♪', cn: '心跳加速 我爱你' },
+        { start: 52530,  end: 55980,  text: '♪ ずっと離さない ♪', cn: '永远不放开你' },
+        { start: 55980,  end: 60020,  text: '♪ この feeling good ♪', cn: '这种感觉真好' },
+        { start: 60020,  end: 63780,  text: '♪ 愛して愛して aaa~ ♪', cn: '爱我 爱我 aaa~' },
+        { start: 63780,  end: 65100,  text: '♪ i cant wait ♪', cn: '我等不及了' },
+        { start: 65100,  end: 66500,  text: '♪ no mistake ♪', cn: '没有错' },
+        { start: 66500,  end: 67750,  text: "♪ i'm in love ♪", cn: '我坠入爱河' },
+        { start: 67750,  end: 69390,  text: '♪ like a drug ♪', cn: '像中了毒' },
+        { start: 69390,  end: 70630,  text: '♪ pick me up ♪', cn: '带我走吧' },
+        { start: 70630,  end: 72130,  text: '♪ these feelings ♪', cn: '这些情愫' },
+        { start: 72130,  end: 74900,  text: '♪ will never leave my heart ♪', cn: '永远不会离开我的心' },
+        { start: 74900,  end: 79900,  text: '♪ love me love me ahh~ ♪', cn: '爱我 爱我啊~' }
+      ]
     }
   ];
 
@@ -116,6 +159,11 @@
   var volBtn   = document.getElementById('music-vol');
   var volRange = document.getElementById('music-vol-range');
   var visCanvas = document.getElementById('page-visualizer');
+  var minibtn   = document.getElementById('music-minibtn');
+  var miniTitle = document.getElementById('music-mini-title');
+  var miniPlay  = document.getElementById('music-mini-play');
+  var miniNext  = document.getElementById('music-mini-next');
+  var miniExpand = document.getElementById('music-mini-expand');
   if (!player || !toggle || !btnPrev || !btnPlay || !btnNext) return;
 
   var audio = new Audio();
@@ -155,6 +203,7 @@
     if (titleEl) {
       var name = t.title || t.src.split('/').pop().replace(/\.[^.]+$/, '');
       titleEl.textContent = '♪ ' + name;
+      if (miniTitle) miniTitle.textContent = '♪ ' + name;
     }
     renderPlaylist();
     renderLyricsPanel();
@@ -200,7 +249,9 @@
   }
 
   function updateUI() {
-    btnPlay.innerHTML = playing ? '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
+    var ic = playing ? '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
+    btnPlay.innerHTML = ic;
+    if (miniPlay) miniPlay.innerHTML = ic;
     player.classList.toggle('playing', playing);
     player.classList.remove('autoplay-blocked');
     updateModeUI();
@@ -289,6 +340,7 @@
     }, 250); // 与 CSS 淡出时长一致
   }
   audio.addEventListener('timeupdate', function() {
+    saveState();
     if (!subEl) return;
     var t = audio.currentTime * 1000;
     var active = null;
@@ -303,7 +355,7 @@
 
   /* ---- audio events ---- */
   audio.addEventListener('play', function() { playing = true; updateUI(); startVisualizer(); });
-  audio.addEventListener('pause', function() { playing = false; updateUI(); stopVisualizer(); });
+  audio.addEventListener('pause', function() { playing = false; updateUI(); stopVisualizer(); saveState(true); });
   audio.addEventListener('ended', function() { next(); });
   audio.addEventListener('error', function() {
     player.classList.add('no-music');
@@ -394,6 +446,16 @@
   audio.addEventListener('timeupdate', updateProgress);
   audio.addEventListener('loadedmetadata', updateProgress);
   audio.addEventListener('durationchange', updateProgress);
+
+  /* ---- 记住上次播放的歌曲和进度 ---- */
+  var lastSave = 0;
+  function saveState(force) {
+    var now = Date.now();
+    if (!force && now - lastSave < 3000) return;
+    lastSave = now;
+    try { localStorage.setItem('music-state', JSON.stringify({ i: current, t: audio.currentTime })); } catch (e) {}
+  }
+  window.addEventListener('beforeunload', function() { saveState(true); });
 
   /* ---- volume ---- */
   function updateVolIcon() {
@@ -515,23 +577,54 @@
     }));
   }
 
+  /* ---- 迷你模式 ---- */
+  if (minibtn) minibtn.addEventListener('click', onClick(function() {
+    player.classList.add('mini');
+    player.classList.remove('expanded', 'menu-open', 'lyrics-open');
+  }));
+  if (miniExpand) miniExpand.addEventListener('click', onClick(function() {
+    player.classList.remove('mini');
+    player.classList.add('expanded');
+  }));
+  if (miniPlay) miniPlay.addEventListener('click', onClick(togglePlay));
+  if (miniNext) miniNext.addEventListener('click', onClick(next));
+
   /* ---- fixed to bottom-right (locked position) ---- */
 
   /* ---- 页面底部可视化：加载即撑满全宽 ---- */
   sizeVisualizer();
   window.addEventListener('resize', sizeVisualizer);
 
-  /* ---- init + delayed auto-play ---- */
-  if (mode === 'shuffle' && PLAYLIST.length > 1) loadTrack(Math.floor(Math.random() * PLAYLIST.length));
-  else loadTrack(0);
+  /* ---- init：恢复上次播放的歌曲/进度；否则随机或第一首 ---- */
+  var startIdx = 0, startTime = 0, hasSaved = false;
+  try {
+    var saved = JSON.parse(localStorage.getItem('music-state') || 'null');
+    if (saved && saved.i >= 0 && saved.i < PLAYLIST.length) {
+      startIdx = saved.i; startTime = saved.t || 0; hasSaved = true;
+    }
+  } catch (e) {}
+  if (!hasSaved && mode === 'shuffle' && PLAYLIST.length > 1) startIdx = Math.floor(Math.random() * PLAYLIST.length);
+  loadTrack(startIdx);
+  if (startTime > 2) {
+    audio.addEventListener('loadedmetadata', function once() {
+      audio.removeEventListener('loadedmetadata', once);
+      try { audio.currentTime = Math.min(startTime, (audio.duration || startTime) - 2); } catch (e) {}
+      updateProgress();
+    });
+  }
   updateUI();
-  setTimeout(function() {
+  /* ---- 自动播放：等音频就绪后立即尝试；被拦截则等首次手势 ---- */
+  var autoplayAttempted = false;
+  function tryAutoplay() {
+    if (autoplayAttempted) return;
+    autoplayAttempted = true;
     var p = audio.play();
     if (p && p.catch) p.catch(function() {
-      // Autoplay blocked by the browser -> start on first user gesture.
+      // 浏览器拦截自动播放 → 首次手势时播放
       player.classList.add('autoplay-blocked');
       var start = function() {
         play();
+        if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume().catch(function() {});
         document.removeEventListener('pointerdown', start);
         document.removeEventListener('keydown', start);
         document.removeEventListener('touchstart', start);
@@ -540,5 +633,13 @@
       document.addEventListener('keydown', start);
       document.addEventListener('touchstart', start);
     });
-  }, AUTOPLAY_DELAY);
+  }
+  // 音频就绪（canplay）立刻播放，不再干等固定延时
+  var onReady = function() {
+    audio.removeEventListener('canplay', onReady);
+    tryAutoplay();
+  };
+  audio.addEventListener('canplay', onReady);
+  // 兜底：若一直未就绪（加载慢），到 AUTOPLAY_DELAY 也试一次
+  setTimeout(tryAutoplay, AUTOPLAY_DELAY);
 })();
