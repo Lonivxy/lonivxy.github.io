@@ -20,32 +20,32 @@
       srt: 'assets/musics/第57次取消发送-菲菲公主.srt',
       title: '第57次取消发送 (菲菲公主)',
       subs: [
-        { start: 11200,  end: 15480,  text: '♪ 好像只能礼貌的问候 ♪' },
-        { start: 16440,  end: 20840,  text: '♪ 你的温柔也曾被我拥有 ♪' },
-        { start: 22100,  end: 27360,  text: '♪ 不太习惯没了你的小宇宙 ♪' },
-        { start: 27360,  end: 31010,  text: '♪ 念旧是上瘾感受 ♪' },
-        { start: 33040,  end: 37120,  text: '♪ 仿佛只能轻声地低语 ♪' },
-        { start: 38310,  end: 42550,  text: '♪ 你的笑容曾温暖我的心 ♪' },
-        { start: 43980,  end: 49260,  text: '♪ 不太习惯失去你的小天地 ♪' },
-        { start: 49260,  end: 52750,  text: '♪ 回忆成了大问题 ♪' },
-        { start: 55600,  end: 58040,  text: '♪ 我好想你 ♪' },
-        { start: 59200,  end: 64099,  text: '♪ 在每个夜里孤单自寻 ♪' },
-        { start: 64499,  end: 66519,  text: '♪ 纷飞的回忆 ♪' },
-        { start: 66519,  end: 71970,  text: '♪ 猜不透你褪色的熟悉 ♪' },
-        { start: 71970,  end: 75350,  text: '♪ 是我编造的幻觉 ♪' },
-        { start: 98180,  end: 100950, text: '♪ 熟悉的世界全是你的记号 ♪' },
-        { start: 100950, end: 103690, text: '♪ 删掉的短信决定不想打扰 ♪' },
-        { start: 103690, end: 106030, text: '♪ 可是想念却在脑袋理后 ♪' },
-        { start: 106030, end: 110630, text: '♪ 照那些画面还是没有办法忘掉你现在在哪里 ♪' },
-        { start: 110630, end: 114880, text: '♪ 我们聊的回忆是不是已经不是唯一 ♪' },
-        { start: 114880, end: 118840, text: '♪ 念旧是我的问题 ♪' },
-        { start: 121280, end: 132180, text: '♪ 我好想你在每个夜里离孤单思绪纷飞的回忆 ♪' },
-        { start: 132180, end: 137630, text: '♪ 猜不透你褪色的熟悉 ♪' },
-        { start: 137630, end: 141030, text: '♪ 是我编造的幻觉 ♪' },
-        { start: 143160, end: 151650, text: '♪ 我好想你在每个夜里孤单自寻 ♪' },
-        { start: 152050, end: 154090, text: '♪ 纷飞的回忆 ♪' },
-        { start: 154090, end: 159520, text: '♪ 猜不透你褪色的熟悉 ♪' },
-        { start: 159520, end: 162160, text: '♪ 是我们造的幻觉 ♪' }
+        { start: 16200,  end: 20480,  text: '♪ 好像只能礼貌的问候 ♪' },
+        { start: 21440,  end: 25840,  text: '♪ 你的温柔也曾被我拥有 ♪' },
+        { start: 27100,  end: 32360,  text: '♪ 不太习惯没了你的小宇宙 ♪' },
+        { start: 32360,  end: 36010,  text: '♪ 念旧是上瘾感受 ♪' },
+        { start: 38040,  end: 42120,  text: '♪ 仿佛只能轻声地低语 ♪' },
+        { start: 43310,  end: 47550,  text: '♪ 你的笑容曾温暖我的心 ♪' },
+        { start: 48980,  end: 54260,  text: '♪ 不太习惯失去你的小天地 ♪' },
+        { start: 54260,  end: 57750,  text: '♪ 回忆成了大问题 ♪' },
+        { start: 60600,  end: 63040,  text: '♪ 我好想你 ♪' },
+        { start: 64200,  end: 69099,  text: '♪ 在每个夜里孤单自寻 ♪' },
+        { start: 69499,  end: 71519,  text: '♪ 纷飞的回忆 ♪' },
+        { start: 71519,  end: 76970,  text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 76970,  end: 80350,  text: '♪ 是我编造的幻觉 ♪' },
+        { start: 103180, end: 105950, text: '♪ 熟悉的世界全是你的记号 ♪' },
+        { start: 105950, end: 108690, text: '♪ 删掉的短信决定不想打扰 ♪' },
+        { start: 108690, end: 111030, text: '♪ 可是想念却在脑袋理后 ♪' },
+        { start: 111030, end: 115630, text: '♪ 照那些画面还是没有办法忘掉你现在在哪里 ♪' },
+        { start: 115630, end: 119880, text: '♪ 我们聊的回忆是不是已经不是唯一 ♪' },
+        { start: 119880, end: 123840, text: '♪ 念旧是我的问题 ♪' },
+        { start: 126280, end: 137180, text: '♪ 我好想你在每个夜里离孤单思绪纷飞的回忆 ♪' },
+        { start: 137180, end: 142630, text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 142630, end: 146030, text: '♪ 是我编造的幻觉 ♪' },
+        { start: 148160, end: 156650, text: '♪ 我好想你在每个夜里孤单自寻 ♪' },
+        { start: 157050, end: 159090, text: '♪ 纷飞的回忆 ♪' },
+        { start: 159090, end: 164520, text: '♪ 猜不透你褪色的熟悉 ♪' },
+        { start: 164520, end: 167160, text: '♪ 是我们造的幻觉 ♪' }
       ]
     },
     {
@@ -557,6 +557,10 @@
         cn.textContent = c.cn;
         line.appendChild(cn);
       }
+      // 点击歌词行 → 跳转到该句时间点
+      line.addEventListener('click', function() {
+        audio.currentTime = c.start / 1000;
+      });
       lyricsPanel.appendChild(line);
     });
   }
@@ -588,6 +592,29 @@
   }));
   if (miniPlay) miniPlay.addEventListener('click', onClick(togglePlay));
   if (miniNext) miniNext.addEventListener('click', onClick(next));
+
+  /* ---- 悬浮提示（避免被面板 overflow 裁剪，挂到 body） ---- */
+  var tipEl = null;
+  function hideTip() { if (tipEl) { tipEl.remove(); tipEl = null; } }
+  function showTip(text, anchor) {
+    hideTip();
+    if (!text || !anchor) return;
+    tipEl = document.createElement('span');
+    tipEl.className = 'music-tip';
+    tipEl.textContent = text;
+    document.body.appendChild(tipEl);
+    var r = anchor.getBoundingClientRect();
+    tipEl.style.left = (r.left + r.width / 2) + 'px';
+    tipEl.style.top = Math.max(4, r.top - 30) + 'px';
+  }
+  document.addEventListener('mouseover', function(e) {
+    var btn = e.target && e.target.closest ? e.target.closest('.music-ctrl, #music-toggle') : null;
+    if (btn && btn.getAttribute('data-tip')) showTip(btn.getAttribute('data-tip'), btn);
+  });
+  document.addEventListener('mouseout', function(e) {
+    var btn = e.target && e.target.closest ? e.target.closest('.music-ctrl, #music-toggle') : null;
+    if (btn) hideTip();
+  });
 
   /* ---- fixed to bottom-right (locked position) ---- */
 

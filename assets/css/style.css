@@ -68,6 +68,42 @@
 .glow-grid li a:hover::before {
   opacity: 1;
 }
+/* 修复：main.css 的 #header nav ul 会把自定义网格覆盖成 flex/白边框 */
+#header nav ul.link-grid {
+  display: grid;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding-left: 15px;
+}
+/* 四个导航按钮（Discord/bilibili/GitHub/Zerune）：宽屏 4x1 单行 */
+@media screen and (min-width: 737px) {
+  #header nav .link-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  #header nav .link-grid li {
+    height: 52px;
+  }
+  #header nav .link-grid li a {
+    white-space: nowrap;
+  }
+}
+/* 播放器按钮悬浮提示 */
+.music-tip {
+  position: fixed;
+  transform: translateX(-50%);
+  padding: 4px 9px;
+  border-radius: 7px;
+  background: rgba(20, 12, 24, 0.92);
+  color: #fff;
+  font-size: 0.68rem;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10002;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
 @font-face {
   font-family: 'HFStickyNotes';
   src: url('../fonts/HFStickyNotes-2.ttf') format('truetype');
@@ -268,11 +304,14 @@ html, body {
     padding: 0 1.25rem;
   }
   #header nav .link-grid {
+    display: grid;
     width: 100%;
     max-width: 340px;
     margin: 0 auto;
     padding: 12px;
+    padding-left: 12px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
   #header nav .link-grid li {
     border-top: 0; /* 覆盖 main.css 移动端的分隔线 */
@@ -286,6 +325,17 @@ html, body {
     width: 100%;
     white-space: nowrap;
     padding: 10px 8px;
+  }
+}
+/* 手机窄屏：四个导航按钮 1x4 竖排 */
+@media screen and (max-width: 480px) {
+  #header nav .link-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    max-width: 280px;
+  }
+  #header nav .link-grid li {
+    height: 44px;
   }
 }
 
@@ -395,23 +445,12 @@ html, body {
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
 }
-/* 原始四个核心按钮（prev/play/next/mode）：主控，各尺寸适配 */
-#music-prev, #music-playpause, #music-next, #music-mode {
-  width: 32px;
-  height: 32px;
-  font-size: 0.85rem;
-}
-#music-playpause {
-  width: 38px;
-  height: 38px;
-  background: linear-gradient(135deg, #fdcbf1, #d6bcff);
-  color: #4a2040;
-  font-size: 0.9rem;
-  box-shadow: 0 4px 14px rgba(214, 188, 255, 0.45);
-}
-#music-playpause:hover {
-  background: linear-gradient(135deg, #fdcbf1, #d6bcff);
-  box-shadow: 0 6px 18px rgba(214, 188, 255, 0.6);
+/* 打开歌词/歌单时，对应按钮填色（浅紫/玫瑰金）表示激活 */
+#music-player.lyrics-open #music-lyrics,
+#music-player.menu-open #music-playlist {
+  background: linear-gradient(135deg, rgba(240, 201, 184, 0.55), rgba(214, 188, 255, 0.55));
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 }
 #music-mode {
   position: relative;
@@ -656,12 +695,17 @@ html, body {
   color: rgba(255, 255, 255, 0.6);
   border-radius: 6px;
   line-height: 1.35;
+  cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+.lyrics-line:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 .lyrics-line.active {
   color: #fff;
   background: rgba(253, 203, 241, 0.18);
   font-weight: 600;
+  font-size: 0.95rem;
 }
 .lyrics-line .lyrics-cn {
   color: #ffd9ec;
@@ -727,14 +771,6 @@ html, body {
   #music-title {
     max-width: 110px;
   }
-  #music-prev, #music-playpause, #music-next, #music-mode {
-    width: 32px;
-    height: 32px;
-  }
-  #music-playpause {
-    width: 36px;
-    height: 36px;
-  }
 }
 /* 小屏 / 竖屏：标题独占一行，按钮固定尺寸换行成两行 */
 @media screen and (max-width: 736px) {
@@ -763,21 +799,9 @@ html, body {
     height: 40px;
     font-size: 0.9rem;
   }
-  /* 原始四个核心按钮在竖屏放大，播放键最大 */
-  #music-prev, #music-playpause, #music-next, #music-mode {
-    width: 44px;
-    height: 44px;
-    font-size: 0.95rem;
-  }
-  #music-playpause {
-    width: 50px;
-    height: 50px;
-    font-size: 1.05rem;
-  }
   #music-vol-range {
-    flex: 1 1 100%;
-    width: auto;
-    max-width: 160px;
+    flex: 0 0 auto;
+    width: 90px;
   }
   #music-playlist-menu {
     max-width: calc(100vw - 40px);

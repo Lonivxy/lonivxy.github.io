@@ -24,21 +24,21 @@
 
   <div id="music-subtitle"></div>
   <div id="music-player">
-    <button id="music-toggle" title="Music player" aria-label="Music player">
+    <button id="music-toggle" data-tip="Music player" aria-label="Music player">
       <i class="fas fa-music"></i>
     </button>
     <div id="music-panel">
       <div id="music-controls">
         <span id="music-title">♪ ...</span>
-        <button class="music-ctrl" id="music-prev" title="Previous" aria-label="Previous"><i class="fas fa-backward"></i></button>
-        <button class="music-ctrl" id="music-playpause" title="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
-        <button class="music-ctrl" id="music-next" title="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
-        <button class="music-ctrl" id="music-mode" title="Random (shuffle)" aria-label="Play mode"><i class="fas fa-random"></i></button>
-        <button class="music-ctrl" id="music-playlist" title="Playlist" aria-label="Playlist"><i class="fas fa-list-ul"></i></button>
-        <button class="music-ctrl" id="music-lyrics" title="Lyrics panel" aria-label="Lyrics"><i class="fas fa-align-left"></i></button>
-        <button class="music-ctrl" id="music-vol" title="Mute" aria-label="Volume"><i class="fas fa-volume-up"></i></button>
-        <input type="range" id="music-vol-range" min="0" max="100" value="100" title="Volume" aria-label="Volume" />
-        <button class="music-ctrl" id="music-minibtn" title="Mini mode" aria-label="Mini mode"><i class="fas fa-compress"></i></button>
+        <button class="music-ctrl" id="music-prev" data-tip="Previous" aria-label="Previous"><i class="fas fa-backward"></i></button>
+        <button class="music-ctrl" id="music-playpause" data-tip="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+        <button class="music-ctrl" id="music-next" data-tip="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
+        <button class="music-ctrl" id="music-mode" data-tip="Random (shuffle)" aria-label="Play mode"><i class="fas fa-random"></i></button>
+        <button class="music-ctrl" id="music-playlist" data-tip="Playlist" aria-label="Playlist"><i class="fas fa-list-ul"></i></button>
+        <button class="music-ctrl" id="music-lyrics" data-tip="Lyrics panel" aria-label="Lyrics"><i class="fas fa-align-left"></i></button>
+        <button class="music-ctrl" id="music-vol" data-tip="Mute" aria-label="Volume"><i class="fas fa-volume-up"></i></button>
+        <input type="range" id="music-vol-range" min="0" max="100" value="100" data-tip="Volume" aria-label="Volume" />
+        <button class="music-ctrl" id="music-minibtn" data-tip="Mini mode" aria-label="Mini mode"><i class="fas fa-compress"></i></button>
       </div>
       <div id="music-progress">
         <span id="music-time-cur">0:00</span>
@@ -51,9 +51,9 @@
     <div id="music-mini">
       <i class="fas fa-music mini-icon"></i>
       <span id="music-mini-title">♪ ...</span>
-      <button class="music-ctrl" id="music-mini-play" title="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
-      <button class="music-ctrl" id="music-mini-next" title="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
-      <button class="music-ctrl" id="music-mini-expand" title="Expand" aria-label="Expand"><i class="fas fa-expand"></i></button>
+      <button class="music-ctrl" id="music-mini-play" data-tip="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+      <button class="music-ctrl" id="music-mini-next" data-tip="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
+      <button class="music-ctrl" id="music-mini-expand" data-tip="Expand" aria-label="Expand"><i class="fas fa-expand"></i></button>
     </div>
   </div>
 
