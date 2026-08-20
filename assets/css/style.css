@@ -287,3 +287,57 @@ html, body {
     padding: 10px 8px;
   }
 }
+
+/* ============================================================
+ * Floating music player
+ * ============================================================ */
+#music-player {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9990;
+  cursor: grab;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+#music-player.dragging {
+  cursor: grabbing;
+}
+#music-btn {
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(253, 203, 241, 0.92), rgba(214, 188, 255, 0.92));
+  color: #4a2040;
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(214, 188, 255, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+#music-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 26px rgba(214, 188, 255, 0.6);
+}
+#music-player .fa-music {
+  transition: transform 0.3s ease;
+}
+/* 播放时音符旋转，作为状态指示 */
+#music-player.playing .fa-music {
+  animation: music-spin 3.2s linear infinite;
+}
+/* 音频文件缺失时的降级样式 */
+#music-player.no-music #music-btn {
+  background: rgba(120, 120, 130, 0.5);
+  color: #eee;
+}
+@keyframes music-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
