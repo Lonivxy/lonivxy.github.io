@@ -38,7 +38,10 @@ This website's source code is open-sourced on GitHub:
 
 `~ % ./github.sh`  # GitHub Stats  
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Lonivxy&theme=radical" alt="GitHub Streak" />
+  <img src="https://img.shields.io/github/followers/Lonivxy?style=for-the-badge&logo=github&label=Followers&color=ec4899" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/Lonivxy?style=for-the-badge&logo=github&label=Stars&color=8b5cf6" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/Lonivxy/lonivxy.github.io?style=for-the-badge&logo=github&label=Forks&color=06b6d4" alt="Forks" />
+  <img src="https://komarev.com/ghpvc/?username=Lonivxy&style=for-the-badge&color=8b5cf6" alt="Profile Views" />
 </p>
 
 `~ % cat tech.txt`  # Vibe Coding  
