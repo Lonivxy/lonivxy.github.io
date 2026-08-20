@@ -296,6 +296,8 @@ html, body {
   bottom: 24px;
   right: 24px;
   z-index: 9990;
+  display: flex;
+  align-items: center;
   cursor: grab;
   -webkit-user-select: none;
   user-select: none;
@@ -304,7 +306,7 @@ html, body {
 #music-player.dragging {
   cursor: grabbing;
 }
-#music-btn {
+#music-toggle {
   width: 54px;
   height: 54px;
   border: none;
@@ -321,9 +323,52 @@ html, body {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 }
-#music-btn:hover {
+#music-toggle:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 26px rgba(214, 188, 255, 0.6);
+}
+/* 可展开的胶囊控制条（向右展开） */
+#music-panel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transform: translateX(8px);
+  transition: max-width 0.3s ease, opacity 0.25s ease, transform 0.3s ease, padding 0.3s ease;
+}
+#music-player.expanded #music-panel {
+  max-width: 220px;
+  opacity: 1;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-left: 10px;
+  transform: translateX(0);
+}
+.music-ctrl {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.music-ctrl:hover {
+  background: rgba(255, 255, 255, 0.32);
+  transform: scale(1.12);
 }
 #music-player .fa-music {
   transition: transform 0.3s ease;
@@ -333,11 +378,34 @@ html, body {
   animation: music-spin 3.2s linear infinite;
 }
 /* 音频文件缺失时的降级样式 */
-#music-player.no-music #music-btn {
+#music-player.no-music #music-toggle {
   background: rgba(120, 120, 130, 0.5);
   color: #eee;
 }
 @keyframes music-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+/* 歌词字幕覆盖层 */
+#music-subtitle {
+  position: fixed;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+  z-index: 9989;
+  max-width: 80vw;
+  padding: 8px 16px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 1.05rem;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+#music-subtitle.show {
+  opacity: 1;
 }

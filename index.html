@@ -21,10 +21,16 @@
   <canvas id="trail"></canvas>
   <canvas id="sakura"></canvas>
 
+  <div id="music-subtitle"></div>
   <div id="music-player">
-    <button id="music-btn" aria-label="Play/Pause music">
+    <button id="music-toggle" title="Music player" aria-label="Music player">
       <i class="fas fa-music"></i>
     </button>
+    <div id="music-panel">
+      <button class="music-ctrl" id="music-prev" title="Previous" aria-label="Previous"><i class="fas fa-backward"></i></button>
+      <button class="music-ctrl" id="music-playpause" title="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+      <button class="music-ctrl" id="music-next" title="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
+    </div>
   </div>
 
   <div id="wrapper">
