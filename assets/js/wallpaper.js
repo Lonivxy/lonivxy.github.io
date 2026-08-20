@@ -37,4 +37,7 @@
   } else {
     window.addEventListener('load', hideLoading);
   }
+
+  // 兜底：即使资源加载缓慢（如首屏壁纸/CDN），最多显示 6 秒 Loading，避免卡住
+  setTimeout(hideLoading, 6000);
 })();
