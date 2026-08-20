@@ -126,6 +126,7 @@
   var playing = false;
   var cues = [];
   var visCtx = null, analyser = null, audioCtx = null, rafId = null;
+  var visSmooth = null; // 每根条的平滑高度（逐帧插值，让频谱平滑起伏）
 
   // ---- play modes: shuffle (default) / sequential / single ----
   var MODES = ['shuffle', 'sequential', 'single'];
@@ -431,7 +432,7 @@
       var src = audioCtx.createMediaElementSource(audio);
       analyser = audioCtx.createAnalyser();
       analyser.fftSize = 512;
-      analyser.smoothingTimeConstant = 0.8;
+      analyser.smoothingTimeConstant = 0.85;
       src.connect(analyser);
       analyser.connect(audioCtx.destination);
     } catch (e) { audioCtx = null; }
@@ -447,14 +448,18 @@
       visCtx.clearRect(0, 0, w, h);
       var data = new Uint8Array(analyser.frequencyBinCount);
       analyser.getByteFrequencyData(data);
-      var MAX_BAR = 30; // 频谱条最高 30px（矮条）
+      var MAX_BAR = 30, MIN_BAR = 5; // 低基线：安静时贴底、响时才缓升
       // 左右镜像对称：中心为镜轴，两边画同一份频谱
       var half = Math.max(1, Math.floor(w / 6));
+      if (!visSmooth || visSmooth.length !== half) visSmooth = new Float32Array(half);
       for (var i = 0; i < half; i++) {
         var idx = Math.min(data.length - 1, Math.floor((i / half) * data.length));
         var raw = data[idx] / 255;
-        var v = Math.pow(raw, 0.6);        // 提升灵敏度：安静段也有明显高度
-        var bh = Math.max(3, v * MAX_BAR); // 至少 3px
+        var v = Math.pow(raw, 0.8); // 平缓曲线：安静时低、响时缓升
+        var wgt = 0.55 + 0.45 * (idx / (data.length - 1)); // 轻度抬高中高频，避免中段贴死
+        var target = MIN_BAR + v * wgt * (MAX_BAR - MIN_BAR);
+        visSmooth[i] += (target - visSmooth[i]) * 0.3; // 逐帧插值：平滑起伏不跳变
+        var bh = visSmooth[i];
         var g = visCtx.createLinearGradient(0, h, 0, h - MAX_BAR);
         g.addColorStop(0, '#d6bcff');
         g.addColorStop(1, '#fdcbf1');
