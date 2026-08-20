@@ -345,7 +345,7 @@ html, body {
   transition: max-width 0.3s ease, opacity 0.25s ease, transform 0.3s ease, padding 0.3s ease;
 }
 #music-player.expanded #music-panel {
-  max-width: 220px;
+  max-width: 340px;
   opacity: 1;
   padding: 5px 10px;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -370,6 +370,16 @@ html, body {
   background: rgba(255, 255, 255, 0.32);
   transform: scale(1.12);
 }
+/* 当前曲目信息 */
+#music-title {
+  max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0 4px;
+}
 #music-player .fa-music {
   transition: transform 0.3s ease;
 }
@@ -385,6 +395,14 @@ html, body {
 @keyframes music-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+/* 自动播放被拦截时的呼吸提示 */
+#music-player.autoplay-blocked #music-toggle {
+  animation: music-pulse 1.8s ease-in-out infinite;
+}
+@keyframes music-pulse {
+  0%, 100% { box-shadow: 0 6px 20px rgba(214, 188, 255, 0.45); }
+  50% { box-shadow: 0 6px 28px rgba(253, 203, 241, 0.95); }
 }
 /* 歌词字幕覆盖层 */
 #music-subtitle {

@@ -1,16 +1,17 @@
 /* ============================================================
- * Floating music player (v2)
+ * Floating music player (v3)
  * ------------------------------------------------------------
  * - Playlist: assets/musics/*.ogg (+ optional .srt subtitles)
- * - Delayed auto-play a few seconds after page load (best-effort)
- * - Click the music button to expand a pill control bar
- *   with Previous / Play-Pause / Next (stretches to the right)
- * - Draggable; .srt subtitles shown as a bottom overlay
+ * - Delayed auto-play after page load; if the browser blocks it,
+ *   playback starts on the first user gesture instead.
+ * - Click the music button to expand a pill control bar with
+ *   track title, Previous / Play-Pause / Next.
+ * - Draggable; .srt lyrics shown as a bottom overlay.
  * ============================================================ */
 (function() {
   var PLAYLIST = [
-    { src: 'assets/musics/57.ogg', srt: 'assets/musics/57.srt' }
-    // add more tracks here, e.g. { src: 'assets/musics/xx.ogg', srt: 'assets/musics/xx.srt' }
+    { src: 'assets/musics/57.ogg', srt: 'assets/musics/57.srt', title: '57' }
+    // add more: { src: 'assets/musics/xx.ogg', srt: 'assets/musics/xx.srt', title: 'Name' }
   ];
 
   var AUTOPLAY_DELAY = 3000; // ms
@@ -20,6 +21,7 @@
   var btnPrev = document.getElementById('music-prev');
   var btnPlay = document.getElementById('music-playpause');
   var btnNext = document.getElementById('music-next');
+  var titleEl = document.getElementById('music-title');
   var subEl   = document.getElementById('music-subtitle');
   if (!player || !toggle || !btnPrev || !btnPlay || !btnNext) return;
 
@@ -36,25 +38,27 @@
   function loadTrack(i) {
     current = ((i % PLAYLIST.length) + PLAYLIST.length) % PLAYLIST.length;
     var t = PLAYLIST[current];
-    audio.src = t.src;
+    audio.src = t.src; // setting src already starts loading; no need for load()
     cues = [];
     if (t.srt) loadSubtitles(t.srt);
-    audio.load();
+    if (titleEl) {
+      var name = t.title || t.src.split('/').pop().replace(/\.[^.]+$/, '');
+      titleEl.textContent = '♪ ' + name;
+    }
   }
 
   function play() {
     var p = audio.play();
-    if (p && p.catch) p.catch(function() {}); // autoplay policy / missing file
+    if (p && p.catch) p.catch(function() {});
   }
-  function togglePlay() {
-    if (playing) audio.pause(); else play();
-  }
+  function togglePlay() { if (playing) audio.pause(); else play(); }
   function next() { loadTrack(current + 1); play(); }
   function prev() { loadTrack(current - 1); play(); }
 
   function updateUI() {
     btnPlay.innerHTML = playing ? '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
     player.classList.toggle('playing', playing);
+    player.classList.remove('autoplay-blocked');
   }
 
   /* ---- .srt subtitles ---- */
@@ -162,6 +166,19 @@
   loadTrack(0);
   updateUI();
   setTimeout(function() {
-    play(); // best-effort; some browsers block until a user gesture
+    var p = audio.play();
+    if (p && p.catch) p.catch(function() {
+      // Autoplay blocked by the browser -> start on first user gesture.
+      player.classList.add('autoplay-blocked');
+      var start = function() {
+        play();
+        document.removeEventListener('pointerdown', start);
+        document.removeEventListener('keydown', start);
+        document.removeEventListener('touchstart', start);
+      };
+      document.addEventListener('pointerdown', start);
+      document.addEventListener('keydown', start);
+      document.addEventListener('touchstart', start);
+    });
   }, AUTOPLAY_DELAY);
 })();
