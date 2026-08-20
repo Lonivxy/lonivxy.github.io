@@ -339,26 +339,34 @@ html, body {
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
-/* 可展开的控制区（向右展开） */
+/* 可展开的控制区（向右展开，纵向排布） */
 #music-panel {
   display: flex;
-  align-items: center;
-  gap: 4px;
+  flex-direction: column;
+  gap: 6px;
   max-width: 0;
+  max-height: 0;
   overflow: hidden;
   opacity: 0;
   padding: 0;
   border-radius: 12px;
   transform: translateX(6px);
-  transition: max-width 0.3s ease, opacity 0.25s ease, transform 0.3s ease, padding 0.3s ease;
+  transition: max-width 0.3s ease, max-height 0.3s ease, opacity 0.25s ease, transform 0.3s ease, padding 0.3s ease;
 }
 #music-player.expanded #music-panel {
-  max-width: 400px;
+  max-width: 440px;
+  max-height: 300px;
   opacity: 1;
-  padding: 2px 2px 2px 10px;
+  padding: 6px 10px;
   margin-left: 10px;
   border-left: 1px solid rgba(255, 255, 255, 0.16);
   transform: translateX(0);
+}
+#music-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
 }
 .music-ctrl {
   width: 32px;
@@ -398,6 +406,8 @@ html, body {
 }
 /* 当前曲目信息 */
 #music-title {
+  flex-shrink: 1;
+  min-width: 0;
   max-width: 110px;
   overflow: hidden;
   white-space: nowrap;
@@ -505,7 +515,151 @@ html, body {
   transform: translateX(-50%) translateY(0);
   animation: subtitle-glow 2.6s ease-in-out infinite;
 }
+#music-subtitle .sub-jp {
+  display: block;
+}
+#music-subtitle .sub-cn {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.72em;
+  letter-spacing: 0.08em;
+  color: #ffd9ec;
+  opacity: 0.85;
+}
 @keyframes subtitle-glow {
   0%, 100% { box-shadow: 0 0 12px rgba(253, 203, 241, 0.25); }
   50% { box-shadow: 0 0 24px rgba(214, 188, 255, 0.55); }
+}
+
+/* 进度条 */
+#music-progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#music-time-cur, #music-time-total {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.62rem;
+  min-width: 30px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+#music-seek {
+  flex: 1;
+  position: relative;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+#music-seek-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #fdcbf1, #d6bcff);
+  transition: width 0.15s linear;
+}
+#music-seek.dragging #music-seek-fill {
+  transition: none;
+}
+
+/* 音量滑块（放在控制按钮最右侧） */
+#music-vol-range {
+  width: 56px;
+  height: 4px;
+  accent-color: #f7b8dd;
+  cursor: pointer;
+}
+
+/* 整页底部音频可视化（矮条、铺满整条底部宽度） */
+#page-visualizer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100vw;
+  height: 48px;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(253, 203, 241, 0.28), rgba(214, 188, 255, 0.1) 55%, transparent);
+}
+
+/* 歌词面板 */
+#music-lyrics-panel {
+  display: none;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 4px;
+}
+#music-player.lyrics-open #music-lyrics-panel {
+  display: block;
+}
+.lyrics-line {
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  line-height: 1.5;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.lyrics-line.active {
+  color: #fff;
+  background: rgba(253, 203, 241, 0.18);
+  font-weight: 600;
+}
+.lyrics-line .lyrics-cn {
+  color: #ffd9ec;
+  opacity: 0.8;
+  margin-left: 8px;
+  font-size: 0.85em;
+  font-weight: 400;
+}
+/* 自定义滚动条（不用原生丑滚动条） */
+#music-lyrics-panel::-webkit-scrollbar,
+#music-playlist-menu::-webkit-scrollbar {
+  width: 6px;
+}
+#music-lyrics-panel::-webkit-scrollbar-track,
+#music-playlist-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+#music-lyrics-panel::-webkit-scrollbar-thumb,
+#music-playlist-menu::-webkit-scrollbar-thumb {
+  background: rgba(253, 203, 241, 0.45);
+  border-radius: 3px;
+}
+#music-lyrics-panel::-webkit-scrollbar-thumb:hover,
+#music-playlist-menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(253, 203, 241, 0.7);
+}
+#music-lyrics-panel,
+#music-playlist-menu {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(253, 203, 241, 0.5) transparent;
+}
+
+/* 头部生日倒计时（在 Love Snow Sakura 下方） */
+#birthday-countdown {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: #ffd9ec;
+  opacity: 0.9;
+}
+
+/* 点击涟漪 */
+.ripple {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 2px solid rgba(253, 203, 241, 0.7);
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple-grow 0.65s ease-out forwards;
+  z-index: 9999;
+}
+@keyframes ripple-grow {
+  from { transform: translate(-50%, -50%) scale(0); opacity: 0.8; }
+  to { transform: translate(-50%, -50%) scale(1); opacity: 0; }
 }

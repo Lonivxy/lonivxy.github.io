@@ -47,50 +47,50 @@
       srt: 'assets/musics/(カササギ_柿崎ユウタ)【本家】月が綺麗ねと言われたい！ - 初音ミク【カササギ】.srt',
       title: '月が綺麗ねと言われたい！',
       subs: [
-        { start: 13120,  end: 15420,  text: '♪ センチメンタル 嫌になる ♪' },
-        { start: 15580,  end: 18420,  text: '♪ 悲しみの君の言葉遊び ♪' },
-        { start: 19140,  end: 24420,  text: '♪ 君の口から出る感情の裏返しが全部私 ♪' },
-        { start: 24940,  end: 27960,  text: '♪ 花占いでもやってみようかな ♪' },
-        { start: 28620,  end: 30480,  text: '♪ 好き？嫌い？好き？嫌い？ ♪' },
-        { start: 30960,  end: 33760,  text: '♪ 君占いなら私はずっと ♪' },
-        { start: 33780,  end: 36400,  text: '♪ 嫌い、嫌い、でも、、、、、好き♡ ♪' },
-        { start: 36420,  end: 39320,  text: '♪ 月が綺麗ねと言われたい！ ♪' },
-        { start: 39400,  end: 42480,  text: '♪ 君の目の先 ずっと私でいたい ♪' },
-        { start: 42920,  end: 46420,  text: '♪ 月が綺麗ねが私じゃないから ♪' },
-        { start: 46900,  end: 48460,  text: '♪ なら今夜だけ ♪' },
-        { start: 48660,  end: 51280,  text: '♪ 月が綺麗ねと言われたい！ ♪' },
-        { start: 51400,  end: 54480,  text: '♪ 私の隣 そっと囁かれたい ♪' },
-        { start: 54900,  end: 58400,  text: '♪ 月が綺麗ねが私じゃないから ♪' },
-        { start: 58900,  end: 60520,  text: '♪ なら今夜だけ ♪' },
-        { start: 61160,  end: 63440,  text: '♪ ロマンティックな夢を見る ♪' },
-        { start: 63580,  end: 66440,  text: '♪ 君なりの最の愛の形？ ♪' },
-        { start: 67180,  end: 69180,  text: '♪ 同じ色 交わらない ♪' },
-        { start: 69220,  end: 72420,  text: '♪ 恋は言わなければ無いと同じ ♪' },
-        { start: 72940,  end: 76660,  text: '♪ 「月の夜に咲く一輪の花みたいね」 ♪' },
-        { start: 78960,  end: 81200,  text: '♪ 君を見て書いた句は ♪' },
-        { start: 81260,  end: 83460,  text: '♪ いつもいつでも字余り ♪' },
-        { start: 83480,  end: 84920,  text: '♪ 私みたいだね ♪' },
-        { start: 84980,  end: 87940,  text: '♪ 花占いでもやってみようかな ♪' },
-        { start: 87980,  end: 90700,  text: '♪ 好き？嫌い？好き？嫌い？ ♪' },
-        { start: 90960,  end: 93760,  text: '♪ 君占いなら私はずっと ♪' },
-        { start: 93800,  end: 96400,  text: '♪ 嫌い、嫌い、でも、、、、、好き♡ ♪' },
-        { start: 96420,  end: 99340,  text: '♪ 月が綺麗ねと言われたい！ ♪' },
-        { start: 99380,  end: 102520, text: '♪ 君の目の先ずっと私でいたい ♪' },
-        { start: 102940, end: 106500, text: '♪ 月が綺麗ねが私じゃないから ♪' },
-        { start: 106900, end: 108520, text: '♪ なら今夜だけ ♪' },
-        { start: 108540, end: 111380, text: '♪ 月が綺麗ねと言われたい！ ♪' },
-        { start: 111400, end: 114480, text: '♪ 私の隣 そっと囁かれたい ♪' },
-        { start: 114940, end: 118460, text: '♪ 月が綺麗ねが私じゃないから ♪' },
-        { start: 118900, end: 120440, text: '♪ なら今夜だけ ♪' },
-        { start: 120580, end: 123260, text: '♪ 月が綺麗ねと言われたい！ ♪' },
-        { start: 123400, end: 126460, text: '♪ 君の目の先ずっと私でいたい ♪' },
-        { start: 126940, end: 130500, text: '♪ 月が綺麗ねが私じゃないから ♪' },
-        { start: 130900, end: 132440, text: '♪ なら今夜だけ ♪' },
-        { start: 132900, end: 135280, text: '♪ 月が綺麗ねと言われたい！ ♪' },
-        { start: 135400, end: 138460, text: '♪ 私の隣 そっと囁かれたい ♪' },
-        { start: 138940, end: 141760, text: '♪ 月が綺麗ねが私じゃないから ♪' },
-        { start: 141780, end: 143700, text: '♪ なら今夜だけ ♪' },
-        { start: 144840, end: 146320, text: '♪ 愛してみてね？ ♪' }
+        { start: 13120,  end: 15420,  text: '♪ センチメンタル 嫌になる ♪', cn: '这份多愁善感，连自己都厌弃' },
+        { start: 15580,  end: 18420,  text: '♪ 悲しみの君の言葉遊び ♪', cn: '你悲伤话语中的游戏' },
+        { start: 19140,  end: 24420,  text: '♪ 君の口から出る感情の裏返しが全部私 ♪', cn: '你口中那些言不由衷，全都是我' },
+        { start: 24940,  end: 27960,  text: '♪ 花占いでもやってみようかな ♪', cn: '不如用花瓣，来占卜一番吧' },
+        { start: 28620,  end: 30480,  text: '♪ 好き？嫌い？好き？嫌い？ ♪', cn: '喜欢？讨厌？喜欢？讨厌？' },
+        { start: 30960,  end: 33760,  text: '♪ 君占いなら私はずっと ♪', cn: '若占卜你的心，我一定永远' },
+        { start: 33780,  end: 36400,  text: '♪ 嫌い、嫌い、でも、、、、、好き♡ ♪', cn: '讨厌、讨厌、可是……还是喜欢♡' },
+        { start: 36420,  end: 39320,  text: '♪ 月が綺麗ねと言われたい！ ♪', cn: '好想听你说一句「月色真美」！' },
+        { start: 39400,  end: 42480,  text: '♪ 君の目の先 ずっと私でいたい ♪', cn: '想一直，站在你目光的尽头' },
+        { start: 42920,  end: 46420,  text: '♪ 月が綺麗ねが私じゃないから ♪', cn: '只因那句「月色真美」，不是对我说' },
+        { start: 46900,  end: 48460,  text: '♪ なら今夜だけ ♪', cn: '那便只限今夜' },
+        { start: 48660,  end: 51280,  text: '♪ 月が綺麗ねと言われたい！ ♪', cn: '好想听你说一句「月色真美」！' },
+        { start: 51400,  end: 54480,  text: '♪ 私の隣 そっと囁かれたい ♪', cn: '想被你贴近耳边，轻轻呢喃' },
+        { start: 54900,  end: 58400,  text: '♪ 月が綺麗ねが私じゃないから ♪', cn: '只因那句「月色真美」，不是对我说' },
+        { start: 58900,  end: 60520,  text: '♪ なら今夜だけ ♪', cn: '那便只限今夜' },
+        { start: 61160,  end: 63440,  text: '♪ ロマンティックな夢を見る ♪', cn: '沉入一场浪漫的梦' },
+        { start: 63580,  end: 66440,  text: '♪ 君なりの最の愛の形？ ♪', cn: '属于你的，爱的模样？' },
+        { start: 67180,  end: 69180,  text: '♪ 同じ色 交わらない ♪', cn: '同样的色彩，却永不相交' },
+        { start: 69220,  end: 72420,  text: '♪ 恋は言わなければ無いと同じ ♪', cn: '爱若不说出口，便如同未曾有过' },
+        { start: 72940,  end: 76660,  text: '♪ 「月の夜に咲く一輪の花みたいね」 ♪', cn: '「宛如月夜里，悄然绽放的一朵花呢」' },
+        { start: 78960,  end: 81200,  text: '♪ 君を見て書いた句は ♪', cn: '望着你写下的诗句' },
+        { start: 81260,  end: 83460,  text: '♪ いつもいつでも字余り ♪', cn: '无论何时，总是不合韵脚' },
+        { start: 83480,  end: 84920,  text: '♪ 私みたいだね ♪', cn: '就像我一样呢' },
+        { start: 84980,  end: 87940,  text: '♪ 花占いでもやってみようかな ♪', cn: '不如用花瓣，来占卜一番吧' },
+        { start: 87980,  end: 90700,  text: '♪ 好き？嫌い？好き？嫌い？ ♪', cn: '喜欢？讨厌？喜欢？讨厌？' },
+        { start: 90960,  end: 93760,  text: '♪ 君占いなら私はずっと ♪', cn: '若占卜你的心，我一定永远' },
+        { start: 93800,  end: 96400,  text: '♪ 嫌い、嫌い、でも、、、、、好き♡ ♪', cn: '讨厌、讨厌、可是……还是喜欢♡' },
+        { start: 96420,  end: 99340,  text: '♪ 月が綺麗ねと言われたい！ ♪', cn: '好想听你说一句「月色真美」！' },
+        { start: 99380,  end: 102520, text: '♪ 君の目の先ずっと私でいたい ♪', cn: '想一直，站在你目光的尽头' },
+        { start: 102940, end: 106500, text: '♪ 月が綺麗ねが私じゃないから ♪', cn: '只因那句「月色真美」，不是对我说' },
+        { start: 106900, end: 108520, text: '♪ なら今夜だけ ♪', cn: '那便只限今夜' },
+        { start: 108540, end: 111380, text: '♪ 月が綺麗ねと言われたい！ ♪', cn: '好想听你说一句「月色真美」！' },
+        { start: 111400, end: 114480, text: '♪ 私の隣 そっと囁かれたい ♪', cn: '想被你贴近耳边，轻轻呢喃' },
+        { start: 114940, end: 118460, text: '♪ 月が綺麗ねが私じゃないから ♪', cn: '只因那句「月色真美」，不是对我说' },
+        { start: 118900, end: 120440, text: '♪ なら今夜だけ ♪', cn: '那便只限今夜' },
+        { start: 120580, end: 123260, text: '♪ 月が綺麗ねと言われたい！ ♪', cn: '好想听你说一句「月色真美」！' },
+        { start: 123400, end: 126460, text: '♪ 君の目の先ずっと私でいたい ♪', cn: '想一直，站在你目光的尽头' },
+        { start: 126940, end: 130500, text: '♪ 月が綺麗ねが私じゃないから ♪', cn: '只因那句「月色真美」，不是对我说' },
+        { start: 130900, end: 132440, text: '♪ なら今夜だけ ♪', cn: '那便只限今夜' },
+        { start: 132900, end: 135280, text: '♪ 月が綺麗ねと言われたい！ ♪', cn: '好想听你说一句「月色真美」！' },
+        { start: 135400, end: 138460, text: '♪ 私の隣 そっと囁かれたい ♪', cn: '想被你贴近耳边，轻轻呢喃' },
+        { start: 138940, end: 141760, text: '♪ 月が綺麗ねが私じゃないから ♪', cn: '只因那句「月色真美」，不是对我说' },
+        { start: 141780, end: 143700, text: '♪ なら今夜だけ ♪', cn: '那便只限今夜' },
+        { start: 144840, end: 146320, text: '♪ 愛してみてね？ ♪', cn: '试着，爱上我吧？' }
       ]
     }
   ];
@@ -107,6 +107,15 @@
   var menuEl  = document.getElementById('music-playlist-menu');
   var titleEl = document.getElementById('music-title');
   var subEl   = document.getElementById('music-subtitle');
+  var btnLyrics  = document.getElementById('music-lyrics');
+  var lyricsPanel = document.getElementById('music-lyrics-panel');
+  var seekEl   = document.getElementById('music-seek');
+  var seekFill = document.getElementById('music-seek-fill');
+  var timeCur  = document.getElementById('music-time-cur');
+  var timeTotal = document.getElementById('music-time-total');
+  var volBtn   = document.getElementById('music-vol');
+  var volRange = document.getElementById('music-vol-range');
+  var visCanvas = document.getElementById('page-visualizer');
   if (!player || !toggle || !btnPrev || !btnPlay || !btnNext) return;
 
   var audio = new Audio();
@@ -116,6 +125,7 @@
   var current = 0;
   var playing = false;
   var cues = [];
+  var visCtx = null, analyser = null, audioCtx = null, rafId = null;
 
   // ---- play modes: shuffle (default) / sequential / single ----
   var MODES = ['shuffle', 'sequential', 'single'];
@@ -146,6 +156,7 @@
       titleEl.textContent = '♪ ' + name;
     }
     renderPlaylist();
+    renderLyricsPanel();
   }
 
   function play() {
@@ -200,8 +211,7 @@
       .then(function(r) { return r.text(); })
       .then(function(text) {
         if (/\\.lrc$/i.test(url)) parseLrc(text);
-        else parseSrt(text);
-      })
+        else parseSrt(text);        renderLyricsPanel();      })
       .catch(function() {}); // file:// may block fetch; works when deployed
   }
   function parseSrt(text) {
@@ -254,15 +264,24 @@
       cues[i].end = (i + 1 < cues.length) ? cues[i + 1].start : cues[i].start + 5000;
     }
   }
-  var lastSub = '';
+  var lastCue = null;
   var subTimer = null;
-  // 换行时先淡出旧字幕，再淡入新字幕
-  function swapSubtitle(txt) {
+  // 换行时先淡出旧字幕，再淡入新字幕（支持日文 + 中文双语）
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function swapSubtitle(cue) {
     if (subTimer) { clearTimeout(subTimer); subTimer = null; }
     subEl.classList.remove('show'); // 触发淡出
-    if (!txt) { subEl.textContent = ''; return; }
+    if (!cue) { subEl.innerHTML = ''; return; }
     subTimer = setTimeout(function() {
-      subEl.textContent = txt;
+      if (cue.cn) {
+        subEl.innerHTML =
+          '<div class="sub-jp">' + esc(cue.text) + '</div>' +
+          '<div class="sub-cn">' + esc(cue.cn) + '</div>';
+      } else {
+        subEl.textContent = cue.text;
+      }
       void subEl.offsetWidth; // 重新触发过渡，实现淡入
       subEl.classList.add('show');
       subTimer = null;
@@ -275,15 +294,15 @@
     for (var i = 0; i < cues.length; i++) {
       if (t >= cues[i].start && t <= cues[i].end) { active = cues[i]; break; }
     }
-    var txt = active ? active.text : '';
-    if (txt === lastSub) return;
-    lastSub = txt;
-    swapSubtitle(txt);
+    if (active === lastCue) return;
+    lastCue = active;
+    swapSubtitle(active);
+    updateLyricsActive(active);
   });
 
   /* ---- audio events ---- */
-  audio.addEventListener('play', function() { playing = true; updateUI(); });
-  audio.addEventListener('pause', function() { playing = false; updateUI(); });
+  audio.addEventListener('play', function() { playing = true; updateUI(); startVisualizer(); });
+  audio.addEventListener('pause', function() { playing = false; updateUI(); stopVisualizer(); });
   audio.addEventListener('ended', function() { next(); });
   audio.addEventListener('error', function() {
     player.classList.add('no-music');
@@ -337,7 +356,165 @@
     });
   }
 
+  /* ---- progress / seek ---- */
+  function fmtTime(s) {
+    if (!isFinite(s) || s < 0) s = 0;
+    var m = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+  function updateProgress() {
+    var d = audio.duration || 0, c = audio.currentTime || 0;
+    if (seekFill) seekFill.style.width = (d ? (c / d) * 100 : 0) + '%';
+    if (timeCur) timeCur.textContent = fmtTime(c);
+    if (timeTotal) timeTotal.textContent = fmtTime(d);
+  }
+  var seeking = false;
+  function seekFromEvent(e) {
+    if (!seekEl || !audio.duration) return;
+    var r = seekEl.getBoundingClientRect();
+    var p = (e.clientX - r.left) / r.width;
+    if (!isFinite(p)) return;
+    p = Math.max(0, Math.min(1, p));
+    audio.currentTime = p * audio.duration;
+    if (seekFill) seekFill.style.width = (p * 100) + '%';
+  }
+  if (seekEl) {
+    seekEl.addEventListener('pointerdown', function(e) {
+      seeking = true;
+      seekEl.classList.add('dragging');
+      if (seekEl.setPointerCapture) seekEl.setPointerCapture(e.pointerId);
+      seekFromEvent(e);
+    });
+    seekEl.addEventListener('pointermove', function(e) { if (seeking) seekFromEvent(e); });
+    window.addEventListener('pointerup', function() {
+      if (seeking) { seeking = false; if (seekEl) seekEl.classList.remove('dragging'); }
+    });
+  }
+  audio.addEventListener('timeupdate', updateProgress);
+  audio.addEventListener('loadedmetadata', updateProgress);
+  audio.addEventListener('durationchange', updateProgress);
+
+  /* ---- volume ---- */
+  function updateVolIcon() {
+    if (!volBtn) return;
+    var muted = audio.muted || audio.volume === 0;
+    volBtn.innerHTML = '<i class="fas ' + (muted ? 'fa-volume-mute' : 'fa-volume-up') + '"></i>';
+  }
+  if (volRange) {
+    volRange.addEventListener('input', function() {
+      audio.volume = volRange.value / 100;
+      audio.muted = false;
+      updateVolIcon();
+    });
+  }
+  if (volBtn) {
+    volBtn.addEventListener('click', onClick(function() {
+      audio.muted = !audio.muted;
+      updateVolIcon();
+    }));
+  }
+  updateVolIcon();
+
+  /* ---- audio visualizer ---- */
+  function sizeVisualizer() {
+    if (!visCanvas) return;
+    visCanvas.width = Math.max(320, Math.round(window.innerWidth));
+    visCanvas.height = 48;
+  }
+  function initVisualizer() {
+    if (!visCanvas || audioCtx || !(window.AudioContext || window.webkitAudioContext)) return;
+    try {
+      visCtx = visCanvas.getContext('2d');
+      sizeVisualizer();
+      var AC = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AC();
+      var src = audioCtx.createMediaElementSource(audio);
+      analyser = audioCtx.createAnalyser();
+      analyser.fftSize = 512;
+      analyser.smoothingTimeConstant = 0.8;
+      src.connect(analyser);
+      analyser.connect(audioCtx.destination);
+    } catch (e) { audioCtx = null; }
+  }
+  function startVisualizer() {
+    if (!visCanvas) return;
+    initVisualizer();
+    if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume().catch(function() {});
+    if (rafId || !visCtx || !analyser) return;
+    var draw = function() {
+      if (!playing) { rafId = null; return; }
+      var w = visCanvas.width, h = visCanvas.height;
+      visCtx.clearRect(0, 0, w, h);
+      var data = new Uint8Array(analyser.frequencyBinCount);
+      analyser.getByteFrequencyData(data);
+      var MAX_BAR = 30; // 频谱条最高 30px（矮条）
+      // 左右镜像对称：中心为镜轴，两边画同一份频谱
+      var half = Math.max(1, Math.floor(w / 6));
+      for (var i = 0; i < half; i++) {
+        var idx = Math.min(data.length - 1, Math.floor((i / half) * data.length));
+        var raw = data[idx] / 255;
+        var v = Math.pow(raw, 0.6);        // 提升灵敏度：安静段也有明显高度
+        var bh = Math.max(3, v * MAX_BAR); // 至少 3px
+        var g = visCtx.createLinearGradient(0, h, 0, h - MAX_BAR);
+        g.addColorStop(0, '#d6bcff');
+        g.addColorStop(1, '#fdcbf1');
+        visCtx.fillStyle = g;
+        var xl = i * 3;
+        var xr = w - (i + 1) * 3;
+        visCtx.fillRect(xl, h - bh, 2, bh); // 左半边
+        visCtx.fillRect(xr, h - bh, 2, bh); // 右半边（镜像）
+      }
+      rafId = requestAnimationFrame(draw);
+    };
+    rafId = requestAnimationFrame(draw);
+  }
+  function stopVisualizer() {
+    if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    if (visCtx && visCanvas) visCtx.clearRect(0, 0, visCanvas.width, visCanvas.height);
+  }
+
+  /* ---- lyrics panel ---- */
+  function renderLyricsPanel() {
+    if (!lyricsPanel) return;
+    lyricsPanel.innerHTML = '';
+    cues.forEach(function(c, i) {
+      var line = document.createElement('div');
+      line.className = 'lyrics-line' + (i === 0 ? ' active' : '');
+      var jp = document.createElement('span');
+      jp.className = 'lyrics-jp';
+      jp.textContent = c.text;
+      line.appendChild(jp);
+      if (c.cn) {
+        var cn = document.createElement('span');
+        cn.className = 'lyrics-cn';
+        cn.textContent = c.cn;
+        line.appendChild(cn);
+      }
+      lyricsPanel.appendChild(line);
+    });
+  }
+  function updateLyricsActive(active) {
+    if (!lyricsPanel) return;
+    var idx = cues.indexOf(active);
+    var lines = lyricsPanel.children;
+    for (var i = 0; i < lines.length; i++) {
+      lines[i].classList.toggle('active', i === idx);
+    }
+    if (idx >= 0 && lines[idx]) {
+      lines[idx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  }
+  if (btnLyrics) {
+    btnLyrics.addEventListener('click', onClick(function() {
+      player.classList.toggle('lyrics-open');
+    }));
+  }
+
   /* ---- fixed to bottom-right (locked position) ---- */
+
+  /* ---- 页面底部可视化：加载即撑满全宽 ---- */
+  sizeVisualizer();
+  window.addEventListener('resize', sizeVisualizer);
 
   /* ---- init + delayed auto-play ---- */
   if (mode === 'shuffle' && PLAYLIST.length > 1) loadTrack(Math.floor(Math.random() * PLAYLIST.length));

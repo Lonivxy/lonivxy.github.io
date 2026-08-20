@@ -1,0 +1,24 @@
+# ---- macOS / OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---- Python（本地虚拟环境 / 缓存）----
+.venv/
+.venv-1/
+venv/
+__pycache__/
+*.py[cod]
+
+# ---- Node ----
+node_modules/
+
+# ---- 编辑器 / 系统临时文件 ----
+*.swp
+*.swo
+*~
+*.tmp
+
+# ---- 日志 ----
+*.log
