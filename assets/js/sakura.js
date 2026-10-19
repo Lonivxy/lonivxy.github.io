@@ -1062,13 +1062,20 @@ function stepAnimation() {
     if(!animating) animate();
 }
 
+var lastRenderTime = 0;
 function animate() {
+    if(animating) requestAnimationFrame(animate);
+
+    // Cap the decorative scene at ~30 fps to keep the main thread free.
+    var now = Date.now();
+    if(now - lastRenderTime < 33) return;
+    lastRenderTime = now;
+
     var curdate = new Date();
     timeInfo.elapsed = (curdate - timeInfo.start) / 1000.0;
     timeInfo.delta = (curdate - timeInfo.prev) / 1000.0;
     timeInfo.prev = curdate;
 
-    if(animating) requestAnimationFrame(animate);
     render();
 }
 
@@ -1096,32 +1103,41 @@ window.addEventListener('load', function(e) {
         return;
     }
 
-    try {
-        makeCanvasFullScreen(canvas);
-        gl = canvas.getContext('experimental-webgl', { preserveDrawingBuffer: true });
-    } catch(e) {
-        if (loadingDiv) {
-            loadingDiv.textContent = "WebGL not supported. Sakura effect cannot be shown. " + e;
-            loadingDiv.classList.remove('hidden');
+    var startScene = function() {
+        try {
+            makeCanvasFullScreen(canvas);
+            gl = canvas.getContext('experimental-webgl', { alpha: true, preserveDrawingBuffer: false });
+        } catch(e) {
+            if (loadingDiv) {
+                loadingDiv.textContent = "WebGL not supported. Sakura effect cannot be shown. " + e;
+                loadingDiv.classList.remove('hidden');
+            }
+            console.error(e);
         }
-        console.error(e);
-    }
 
-    if (gl) {
-        window.addEventListener('resize', onResize);
-        setViewports();
-        createScene();
-        initScene();
+        if (gl) {
+            window.addEventListener('resize', onResize);
+            setViewports();
+            createScene();
+            initScene();
+        } else {
+            console.warn("WebGL context not available. Sakura animation will not run.");
+        }
+
+        timeInfo.start = new Date();
+        timeInfo.prev = timeInfo.start;
+        if (gl) {
+            animate();
+            // Scene is ready — fade out the loading overlay.
+            setTimeout(hideLoading, 50);
+        }
+    };
+
+    // Start the decorative scene only once the page is already usable.
+    if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(startScene, { timeout: 1500 });
     } else {
-        console.warn("WebGL context not available. Sakura animation will not run.");
-    }
-
-    timeInfo.start = new Date();
-    timeInfo.prev = timeInfo.start;
-    if (gl) {
-        animate();
-        // Scene is ready — fade out the loading overlay.
-        setTimeout(hideLoading, 50);
+        window.setTimeout(startScene, 600);
     }
 });
 

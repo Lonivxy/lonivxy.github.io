@@ -1406,9 +1406,8 @@ input, select, textarea {
 			}
 
 			body.is-preload #header .content .inner {
-				max-height: 0;
-				padding-top: 0;
-				padding-bottom: 0;
+				/* Keep the final box size while fading in so the header does not
+				   grow and shift the nav/footer during load (CLS). */
 				opacity: 0;
 			}
 
