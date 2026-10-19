@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffe6f0" />
+  <meta name="robots" content="noindex" />
   <title>404 Not Found nya~</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b2140' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/></svg>" />
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 1.5rem;
+      min-height: 100vh;
+      min-height: 100dvh;
+      box-sizing: border-box;
       background-color: #ffe6f0;
+      color: #6b2140;
       font-family: 'Comic Sans MS', cursive, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      color: #f6a2ff;
-      text-align: center; 
+      text-align: center;
     }
     h1 {
-      font-size: 6em;
+      font-size: clamp(3.5em, 14vw, 6em);
       margin: 0;
     }
     p {
@@ -30,24 +36,33 @@
       display: inline-block;
       margin-top: 20px;
       padding: 12px 24px;
-      background-color: #e1bbce;
-      color: #fff8f8;
+      background-color: #7d2b55;
+      color: #ffffff;
       text-decoration: none;
       border-radius: 12px;
       font-weight: bold;
       transition: background-color 0.3s;
     }
     a:hover {
-      background-color: #ffbddb;
+      background-color: #96376a;
+    }
+    a:focus-visible {
+      outline: 3px solid #6b2140;
+      outline-offset: 3px;
     }
     .cat-face {
       font-size: 3em;
       margin-bottom: 10px;
     }
+    @media (prefers-reduced-motion: reduce) {
+      a {
+        transition: none;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="cat-face">nya~ ฅ^•ﻌ•^ฅ</div>
+  <div class="cat-face" aria-hidden="true">nya~ ฅ^•ﻌ•^ฅ</div>
   <h1>404 😨</h1>
   <p>Nyah~nth here~ (´｡• ω •｡`)</p>
   <a href="/">Take me home.</a>

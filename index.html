@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html lang="en"> <head>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lonivxy ♡ Just a speck of stardust~</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/></svg>" />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    rel="stylesheet"
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#1a1020" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta
+    name="description"
+    content="Lonivxy — developer, gamer and Minecraft PvP enthusiast. Find me on Discord, bilibili and GitHub."
   />
+  <title>Lonivxy ♡ Just a speck of stardust~</title>
+  <link rel="canonical" href="https://lovx.me/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/></svg>" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Lonivxy" />
+  <meta property="og:title" content="Lonivxy ♡ Just a speck of stardust~" />
+  <meta
+    property="og:description"
+    content="Lonivxy — developer, gamer and Minecraft PvP enthusiast. Find me on Discord, bilibili and GitHub."
+  />
+  <meta property="og:url" content="https://lovx.me/" />
+  <meta property="og:image" content="https://lovx.me/assets/images/avatar.jpg" />
+  <meta property="og:image:alt" content="Lonivxy's avatar" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lonivxy ♡ Just a speck of stardust~" />
+  <meta
+    name="twitter:description"
+    content="Lonivxy — developer, gamer and Minecraft PvP enthusiast. Find me on Discord, bilibili and GitHub."
+  />
+  <meta name="twitter:image" content="https://lovx.me/assets/images/avatar.jpg" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lonivxy",
+      "url": "https://lovx.me/",
+      "image": "https://lovx.me/assets/images/avatar.jpg",
+      "sameAs": [
+        "https://github.com/Lonivxy",
+        "https://space.bilibili.com/591406440",
+        "https://discord.com/users/998833969183346708"
+      ]
+    }
+  </script>
 
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+    <style>
+      #loading { display: none !important; }
+      body.is-preload #footer { opacity: 1 !important; }
+    </style>
+  </noscript>
 </head>
 <body class="is-preload">
   <div id="bg-wallpaper"></div>
@@ -20,65 +66,31 @@
   <div id="cursor"></div>
   <canvas id="trail"></canvas>
   <canvas id="sakura"></canvas>
-  <canvas id="page-visualizer"></canvas>
-
-  <div id="music-subtitle"></div>
-  <div id="music-player">
-    <button id="music-toggle" data-tip="Music player" aria-label="Music player">
-      <i class="fas fa-music"></i>
-    </button>
-    <div id="music-panel">
-      <div id="music-controls">
-        <span id="music-title">♪ ...</span>
-        <button class="music-ctrl" id="music-prev" data-tip="Previous" aria-label="Previous"><i class="fas fa-backward"></i></button>
-        <button class="music-ctrl" id="music-playpause" data-tip="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
-        <button class="music-ctrl" id="music-next" data-tip="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
-        <button class="music-ctrl" id="music-mode" data-tip="Random (shuffle)" aria-label="Play mode"><i class="fas fa-random"></i></button>
-        <button class="music-ctrl" id="music-playlist" data-tip="Playlist" aria-label="Playlist"><i class="fas fa-list-ul"></i></button>
-        <button class="music-ctrl" id="music-lyrics" data-tip="Lyrics panel" aria-label="Lyrics"><i class="fas fa-align-left"></i></button>
-        <button class="music-ctrl" id="music-vol" data-tip="Mute" aria-label="Volume"><i class="fas fa-volume-up"></i></button>
-        <input type="range" id="music-vol-range" min="0" max="100" value="100" data-tip="Volume" aria-label="Volume" />
-        <button class="music-ctrl" id="music-minibtn" data-tip="Mini mode" aria-label="Mini mode"><i class="fas fa-compress"></i></button>
-      </div>
-      <div id="music-progress">
-        <span id="music-time-cur">0:00</span>
-        <div id="music-seek"><div id="music-seek-fill"></div></div>
-        <span id="music-time-total">0:00</span>
-      </div>
-      <div id="music-lyrics-panel"></div>
-    </div>
-    <div id="music-playlist-menu"></div>
-    <div id="music-mini">
-      <i class="fas fa-music mini-icon"></i>
-      <span id="music-mini-title">♪ ...</span>
-      <button class="music-ctrl" id="music-mini-play" data-tip="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
-      <button class="music-ctrl" id="music-mini-next" data-tip="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
-      <button class="music-ctrl" id="music-mini-expand" data-tip="Expand" aria-label="Expand"><i class="fas fa-expand"></i></button>
-    </div>
-  </div>
 
   <div id="wrapper">
     <header id="header">
       <div class="icon">
         <img
-          src="https://q1.qlogo.cn/g?b=qq&nk=1729465108&s=640"
-          alt="AEINK"
+          src="assets/images/avatar.jpg"
+          alt="Lonivxy"
           class="logo"
+          width="425"
+          height="426"
         />
       </div>
-       <div class="content">
-          <div class="inner">
-            <h1><span class="hfsticky">Lonivxy♡  </span></h1>
-            <p>
-              <span class="love">Love.</span>
-              <span class="snow">Snow.</span>
-              <span class="sakura">Sakura.</span>
-             </p>
-             <p class="birthday" id="birthday-countdown">🎂 ...</p>
-           </div>
+      <div class="content">
+        <div class="inner">
+          <h1><span class="hfsticky">Lonivxy♡</span></h1>
+          <p>
+            <span class="love">Love.</span>
+            <span class="snow">Snow.</span>
+            <span class="sakura">Sakura.</span>
+          </p>
+          <p class="birthday" id="birthday-countdown">🎂 ...</p>
         </div>
+      </div>
 
-      <nav>
+      <nav aria-label="Social links">
         <ul class="link-grid glow-grid">
           <li>
             <a
@@ -86,7 +98,7 @@
               rel="noopener noreferrer"
               href="https://discord.com/users/998833969183346708"
             >
-              <i class="fa-brands fa-discord"></i> Discord
+              <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg> Discord
             </a>
           </li>
           <li>
@@ -95,7 +107,7 @@
               rel="noopener noreferrer"
               href="https://space.bilibili.com/591406440"
             >
-              <i class="fa-brands fa-bilibili"></i> bilibili
+              <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373Z"/></svg> bilibili
             </a>
           </li>
           <li>
@@ -104,7 +116,7 @@
               rel="noopener noreferrer"
               href="https://github.com/Lonivxy"
             >
-              <i class="fa-brands fa-github"></i> GitHub
+              <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub
             </a>
           </li>
           <li>
@@ -113,7 +125,7 @@
               rel="noopener noreferrer"
               href="https://zerune.cloud"
             >
-              <i class="fa-solid fa-server"></i> Zerune
+              <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4Zm3 1v3h2V5H6Zm-3 10a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5Zm3 1v3h2v-3H6Z"/></svg> Zerune
             </a>
           </li>
         </ul>
@@ -121,28 +133,16 @@
     </header>
 
     <footer id="footer">
-      <p class="copyright">
-        <script>
-          var year = new Date().getFullYear();
-          document.write("&copy; 2024 - " + year + " Lonivxy.");
-        </script>
-      </p>
+      <p class="copyright">© 2024 - <span id="year">2026</span> Lonivxy.</p>
       <p class="copyright">
         "I leave pieces of myself in every silence, hoping someone will hear them."
       </p>
     </footer>
   </div>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
   <script src="assets/js/sakura.js"></script>
   <script src="assets/js/wallpaper.js"></script>
-  <script src="assets/js/music-player.js"></script>
   <script src="assets/js/widgets.js"></script>
-
-
 </body>
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"> <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lonivxy ♡ Just a speck of stardust~</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/></svg>" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="is-preload">
+  <div id="bg-wallpaper"></div>
+  <div id="loading">Loading...</div>
+
+  <div id="cursor-glow"></div>
+  <div id="cursor"></div>
+  <canvas id="trail"></canvas>
+  <canvas id="sakura"></canvas>
+  <canvas id="page-visualizer"></canvas>
+
+  <div id="music-subtitle"></div>
+  <div id="music-player">
+    <button id="music-toggle" data-tip="Music player" aria-label="Music player">
+      <i class="fas fa-music"></i>
+    </button>
+    <div id="music-panel">
+      <div id="music-controls">
+        <span id="music-title">♪ ...</span>
+        <button class="music-ctrl" id="music-prev" data-tip="Previous" aria-label="Previous"><i class="fas fa-backward"></i></button>
+        <button class="music-ctrl" id="music-playpause" data-tip="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+        <button class="music-ctrl" id="music-next" data-tip="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
+        <button class="music-ctrl" id="music-mode" data-tip="Random (shuffle)" aria-label="Play mode"><i class="fas fa-random"></i></button>
+        <button class="music-ctrl" id="music-playlist" data-tip="Playlist" aria-label="Playlist"><i class="fas fa-list-ul"></i></button>
+        <button class="music-ctrl" id="music-lyrics" data-tip="Lyrics panel" aria-label="Lyrics"><i class="fas fa-align-left"></i></button>
+        <button class="music-ctrl" id="music-vol" data-tip="Mute" aria-label="Volume"><i class="fas fa-volume-up"></i></button>
+        <input type="range" id="music-vol-range" min="0" max="100" value="100" data-tip="Volume" aria-label="Volume" />
+        <button class="music-ctrl" id="music-minibtn" data-tip="Mini mode" aria-label="Mini mode"><i class="fas fa-compress"></i></button>
+      </div>
+      <div id="music-progress">
+        <span id="music-time-cur">0:00</span>
+        <div id="music-seek"><div id="music-seek-fill"></div></div>
+        <span id="music-time-total">0:00</span>
+      </div>
+      <div id="music-lyrics-panel"></div>
+    </div>
+    <div id="music-playlist-menu"></div>
+    <div id="music-mini">
+      <i class="fas fa-music mini-icon"></i>
+      <span id="music-mini-title">♪ ...</span>
+      <button class="music-ctrl" id="music-mini-play" data-tip="Play/Pause" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+      <button class="music-ctrl" id="music-mini-next" data-tip="Next" aria-label="Next"><i class="fas fa-forward"></i></button>
+      <button class="music-ctrl" id="music-mini-expand" data-tip="Expand" aria-label="Expand"><i class="fas fa-expand"></i></button>
+    </div>
+  </div>
+
+  <div id="wrapper">
+    <header id="header">
+      <div class="icon">
+        <img
+          src="https://q1.qlogo.cn/g?b=qq&nk=1729465108&s=640"
+          alt="AEINK"
+          class="logo"
+        />
+      </div>
+       <div class="content">
+          <div class="inner">
+            <h1><span class="hfsticky">Lonivxy♡  </span></h1>
+            <p>
+              <span class="love">Love.</span>
+              <span class="snow">Snow.</span>
+              <span class="sakura">Sakura.</span>
+             </p>
+             <p class="birthday" id="birthday-countdown">🎂 ...</p>
+           </div>
+        </div>
+
+      <nav>
+        <ul class="link-grid glow-grid">
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://discord.com/users/998833969183346708"
+            >
+              <i class="fa-brands fa-discord"></i> Discord
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://space.bilibili.com/591406440"
+            >
+              <i class="fa-brands fa-bilibili"></i> bilibili
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Lonivxy"
+            >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://zerune.cloud"
+            >
+              <i class="fa-solid fa-server"></i> Zerune
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer id="footer">
+      <p class="copyright">
+        <script>
+          var year = new Date().getFullYear();
+          document.write("&copy; 2024 - " + year + " Lonivxy.");
+        </script>
+      </p>
+      <p class="copyright">
+        "I leave pieces of myself in every silence, hoping someone will hear them."
+      </p>
+    </footer>
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/sakura.js"></script>
+  <script src="assets/js/wallpaper.js"></script>
+  <script src="assets/js/music-player.js"></script>
+  <script src="assets/js/widgets.js"></script>
+
+
+</body>
+</html>

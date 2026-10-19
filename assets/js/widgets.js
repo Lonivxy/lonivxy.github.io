@@ -27,15 +27,19 @@
   updateCountdown();
   setInterval(updateCountdown, 1000);
 
-  /* ---- click ripple ---- */
-  document.addEventListener('pointerdown', function(e) {
-    var size = Math.max(40, Math.min(window.innerWidth, window.innerHeight) * 0.09);
-    var r = document.createElement('span');
-    r.className = 'ripple';
-    r.style.width = r.style.height = size + 'px';
-    r.style.left = e.clientX + 'px';
-    r.style.top = e.clientY + 'px';
-    document.body.appendChild(r);
-    setTimeout(function() { if (r.parentNode) r.parentNode.removeChild(r); }, 700);
-  });
+  /* ---- click ripple (disabled for reduced motion) ---- */
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion) {
+    document.addEventListener('pointerdown', function(e) {
+      var size = Math.max(40, Math.min(window.innerWidth, window.innerHeight) * 0.09);
+      var r = document.createElement('span');
+      r.className = 'ripple';
+      r.style.width = r.style.height = size + 'px';
+      r.style.left = e.clientX + 'px';
+      r.style.top = e.clientY + 'px';
+      document.body.appendChild(r);
+      setTimeout(function() { if (r.parentNode) r.parentNode.removeChild(r); }, 700);
+    });
+  }
 })();

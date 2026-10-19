@@ -1089,6 +1089,13 @@ window.addEventListener('load', function(e) {
             loadingDiv.classList.add('hidden');
         }
     };
+
+    // Respect the user's reduced-motion preference: skip the full-screen scene.
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        hideLoading();
+        return;
+    }
+
     try {
         makeCanvasFullScreen(canvas);
         gl = canvas.getContext('experimental-webgl', { preserveDrawingBuffer: true });

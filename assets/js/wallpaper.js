@@ -27,7 +27,7 @@
     bg.style.backgroundImage = "url('" + url + "')";
   }
 
-  // 页面加载完成后隐藏加载遮罩（与 main.js 移除 is-preload 一致）
+  // 页面加载完成后隐藏加载遮罩（与 site.js 移除 is-preload 一致）
   function hideLoading() {
     if (loadingDiv) loadingDiv.classList.add('hidden');
   }
